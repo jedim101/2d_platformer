@@ -1,20 +1,22 @@
 [gd_scene load_steps=4 format=3 uid="uid://be5smo81o07df"]
 
 [ext_resource type="Script" path="res://scenes/portal.gd" id="1_dckvb"]
+[ext_resource type="Texture2D" uid="uid://k07qai6b2qpg" path="res://assets/portal.png" id="2_pcf3n"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_cgho7"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qlicv"]
-size = Vector2(100, 150)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4hl82"]
+radius = 35.0
+height = 131.0
 
 [node name="Portal" type="Area2D" groups=["portal"]]
 script = ExtResource("1_dckvb")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(100, 150)
-texture = SubResource("PlaceholderTexture2D_cgho7")
+position = Vector2(0.5, 0)
+scale = Vector2(4.95, 5)
+texture = ExtResource("2_pcf3n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_qlicv")
+position = Vector2(0, 9.5)
+shape = SubResource("CapsuleShape2D_4hl82")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
