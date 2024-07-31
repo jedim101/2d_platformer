@@ -2,44 +2,41 @@
 
 [ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="1_v1mwn"]
 [ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="2_ubbqj"]
+[ext_resource type="PackedScene" uid="uid://c66ah3ds3hirg" path="res://scenes/platform.tscn" id="3_hjiv6"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_fbpuu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wktow"]
-size = Vector2(1150, 83)
-
-[sub_resource type="QuadMesh" id="QuadMesh_vb33j"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8o5rt"]
-size = Vector2(349.5, 46)
+size = Vector2(1763, 145)
 
 [node name="Main" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_v1mwn")]
-position = Vector2(340, 229)
+position = Vector2(956, 1326)
 
 [node name="Ground" type="StaticBody2D" parent="."]
+position = Vector2(364, 266)
 
-[node name="ColorRect" type="ColorRect" parent="Ground"]
-offset_top = 565.0
-offset_right = 1150.0
-offset_bottom = 650.0
-color = Color(0, 0.552941, 0, 1)
+[node name="Sprite2D" type="Sprite2D" parent="Ground"]
+position = Vector2(600, 1132)
+scale = Vector2(1763, 144)
+texture = SubResource("PlaceholderTexture2D_fbpuu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
-position = Vector2(574, 607.5)
+position = Vector2(600.5, 1132.5)
 shape = SubResource("RectangleShape2D_wktow")
 
-[node name="Platform" type="StaticBody2D" parent="."]
-position = Vector2(89, -4)
-
-[node name="MeshInstance2D" type="MeshInstance2D" parent="Platform"]
-modulate = Color(0.168627, 0.152941, 1, 1)
-position = Vector2(848.625, 521.875)
-scale = Vector2(347.25, 47.7501)
-mesh = SubResource("QuadMesh_vb33j")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
-position = Vector2(848, 522)
-shape = SubResource("RectangleShape2D_8o5rt")
-
 [node name="Box" parent="." instance=ExtResource("2_ubbqj")]
-position = Vector2(136, 454)
+position = Vector2(1148, 1065)
+
+[node name="Platform" parent="." instance=ExtResource("3_hjiv6")]
+position = Vector2(1696, 1276)
+
+[node name="Platform2" parent="." instance=ExtResource("3_hjiv6")]
+position = Vector2(1247, 1165)
+
+[node name="Platform3" parent="." instance=ExtResource("3_hjiv6")]
+position = Vector2(233, 1276)
+
+[node name="Platform4" parent="." instance=ExtResource("3_hjiv6")]
+position = Vector2(233, 1176)
