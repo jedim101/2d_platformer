@@ -1,40 +1,23 @@
-[gd_scene load_steps=7 format=3 uid="uid://xi2r5qurslhq"]
+[gd_scene load_steps=5 format=3 uid="uid://xi2r5qurslhq"]
 
 [ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="1_v1mwn"]
 [ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="2_ubbqj"]
 [ext_resource type="PackedScene" uid="uid://c66ah3ds3hirg" path="res://scenes/platform.tscn" id="3_hjiv6"]
 [ext_resource type="PackedScene" uid="uid://be5smo81o07df" path="res://scenes/portal.tscn" id="4_n83ho"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_fbpuu"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wktow"]
-size = Vector2(1763, 145)
-
 [node name="Main" type="Node2D"]
 
-[node name="Ground" type="StaticBody2D" parent="."]
-position = Vector2(364, 266)
-
-[node name="Sprite2D" type="Sprite2D" parent="Ground"]
-position = Vector2(600, 1132)
-scale = Vector2(1763, 144)
-texture = SubResource("PlaceholderTexture2D_fbpuu")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
-position = Vector2(600.5, 1132.5)
-shape = SubResource("RectangleShape2D_wktow")
-
 [node name="Portal" parent="." instance=ExtResource("4_n83ho")]
-position = Vector2(558, 1251)
+position = Vector2(572, 1250)
 
 [node name="Portal2" parent="." instance=ExtResource("4_n83ho")]
-position = Vector2(1007, 504)
+position = Vector2(959, 511)
 
 [node name="Box" parent="." instance=ExtResource("2_ubbqj")]
 position = Vector2(1148, 1065)
 
 [node name="Platform" parent="." instance=ExtResource("3_hjiv6")]
-position = Vector2(1696, 1276)
+position = Vector2(1733, 1276)
 
 [node name="Platform2" parent="." instance=ExtResource("3_hjiv6")]
 position = Vector2(1247, 1165)
@@ -48,5 +31,9 @@ position = Vector2(233, 1176)
 [node name="Platform5" parent="." instance=ExtResource("3_hjiv6")]
 position = Vector2(1012, 644)
 
+[node name="Platform6" parent="." instance=ExtResource("3_hjiv6")]
+position = Vector2(983, 1376)
+scale = Vector2(6, 1)
+
 [node name="Player" parent="." instance=ExtResource("1_v1mwn")]
-position = Vector2(956, 1326)
+position = Vector2(820, 1306)

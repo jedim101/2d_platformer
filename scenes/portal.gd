@@ -2,16 +2,17 @@ extends Area2D
 
 var disabled = false
 
-func _on_area_entered(area):
-	if disabled:
-		print("disabled")
-		return
-	
-	print("hello")
+func _on_body_entered(body):	
 	for portal in get_tree().get_nodes_in_group("portal"):
-		print(portal)
 		if self != portal:
-			print(portal.global_position)
-			area. = portal.position
-	
-	disabled = true
+			if portal.disabled:
+				break
+
+			disabled = true
+
+			body.global_position = portal.global_position - (global_position - body.global_position)
+
+			await get_tree().create_timer(0.1).timeout
+			disabled = false
+
+			break
