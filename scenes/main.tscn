@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://xi2r5qurslhq"]
+[gd_scene load_steps=6 format=3 uid="uid://xi2r5qurslhq"]
 
 [ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="1_v1mwn"]
+[ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="2_ubbqj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wktow"]
 size = Vector2(1150, 83)
@@ -39,3 +40,6 @@ mesh = SubResource("QuadMesh_vb33j")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
 position = Vector2(848, 522)
 shape = SubResource("RectangleShape2D_8o5rt")
+
+[node name="Box" parent="." instance=ExtResource("2_ubbqj")]
+position = Vector2(136, 454)

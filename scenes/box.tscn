@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://di88ufajyf6hb"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_bulkq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4e223"]
+size = Vector2(60, 53)
+
+[node name="Box" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.779291, 0.779291, 0.779291, 1)
+position = Vector2(30.125, 26.75)
+scale = Vector2(59.75, 52.5)
+texture = SubResource("PlaceholderTexture2D_bulkq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(30, 26.5)
+shape = SubResource("RectangleShape2D_4e223")
