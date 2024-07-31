@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://be5smo81o07df"]
+
+[ext_resource type="Script" path="res://scenes/portal.gd" id="1_dckvb"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_cgho7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qlicv"]
+size = Vector2(100, 150)
+
+[node name="Portal" type="Area2D" groups=["portal"]]
+script = ExtResource("1_dckvb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(100, 150)
+texture = SubResource("PlaceholderTexture2D_cgho7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_qlicv")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
