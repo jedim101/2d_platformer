@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://di88ufajyf6hb"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_bulkq"]
+[ext_resource type="Texture2D" uid="uid://c5ij1xjyhacy" path="res://assets/crate.png" id="1_4sfnm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4e223"]
 size = Vector2(100, 100)
@@ -9,9 +9,9 @@ size = Vector2(100, 100)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(0.779291, 0.779291, 0.779291, 1)
-position = Vector2(2.08165e-12, 2.08165e-12)
-scale = Vector2(100, 100)
-texture = SubResource("PlaceholderTexture2D_bulkq")
+position = Vector2(2.95639e-05, 1.43051e-06)
+scale = Vector2(5, 5)
+texture = ExtResource("1_4sfnm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_4e223")
