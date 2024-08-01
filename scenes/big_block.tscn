@@ -1,12 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://iw3caubyiwnp"]
+[gd_scene load_steps=3 format=3 uid="uid://dr6nd8xb1or88"]
 
 [ext_resource type="Texture2D" uid="uid://c17n81b12j6b" path="res://assets/stones.png" id="1_f2xj0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_metag"]
-size = Vector2(2342, 2501)
+size = Vector2(2342, 2500)
 
 [node name="Big Block" type="StaticBody2D"]
 metadata/width = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_metag")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_repeat = 2
@@ -14,7 +17,3 @@ scale = Vector2(4.68333, 5)
 texture = ExtResource("1_f2xj0")
 region_enabled = true
 region_rect = Rect2(2.08165e-12, 2.08165e-12, 500, 500)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 0.5)
-shape = SubResource("RectangleShape2D_metag")
