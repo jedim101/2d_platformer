@@ -1,16 +1,27 @@
-[gd_scene load_steps=7 format=3 uid="uid://ddvm8dcf1wiwf"]
+[gd_scene load_steps=8 format=3 uid="uid://ddvm8dcf1wiwf"]
 
 [ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_3e3vm"]
-[ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://end_door.tscn" id="2_tx01e"]
+[ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://scenes/end_door.tscn" id="2_tx01e"]
 [ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="3_ddrat"]
-[ext_resource type="PackedScene" uid="uid://6k3lpo2we22s" path="res://1x_3.tscn" id="4_j7bpe"]
+[ext_resource type="PackedScene" uid="uid://6k3lpo2we22s" path="res://scenes/1x_3.tscn" id="4_j7bpe"]
 [ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="5_wmksb"]
+[ext_resource type="PackedScene" uid="uid://begaypcqs5dk6" path="res://scenes/_5x_1.tscn" id="6_1m52v"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_a14v0"]
 font_size = 100
 font_color = Color(0.743482, 0.743482, 0.743482, 1)
 
 [node name="Level 2" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 99.0
+offset_top = 105.0
+offset_right = 1873.0
+offset_bottom = 1047.0
+text = "You can push boxes"
+label_settings = SubResource("LabelSettings_a14v0")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Big Block" parent="." instance=ExtResource("1_3e3vm")]
 position = Vector2(1076, 2305)
@@ -31,7 +42,7 @@ position = Vector2(1734, 780)
 position = Vector2(304, 1055)
 
 [node name="1x3" parent="." instance=ExtResource("4_j7bpe")]
-position = Vector2(1732, 1005)
+position = Vector2(1733, 1005)
 
 [node name="1x4" parent="." instance=ExtResource("4_j7bpe")]
 position = Vector2(1733, 905)
@@ -39,12 +50,5 @@ position = Vector2(1733, 905)
 [node name="Box" parent="." instance=ExtResource("5_wmksb")]
 position = Vector2(608, 1005)
 
-[node name="Label" type="Label" parent="."]
-offset_left = 99.0
-offset_top = 105.0
-offset_right = 1873.0
-offset_bottom = 1047.0
-text = "You can push boxes"
-label_settings = SubResource("LabelSettings_a14v0")
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="_5x1" parent="." instance=ExtResource("6_1m52v")]
+position = Vector2(95, 1030)

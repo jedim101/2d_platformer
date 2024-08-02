@@ -1,0 +1,74 @@
+[gd_scene load_steps=8 format=3 uid="uid://b733h045erndr"]
+
+[ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_bsvv7"]
+[ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://scenes/end_door.tscn" id="2_684wj"]
+[ext_resource type="PackedScene" uid="uid://6k3lpo2we22s" path="res://scenes/1x_3.tscn" id="3_n1gxf"]
+[ext_resource type="PackedScene" uid="uid://be5smo81o07df" path="res://scenes/portal.tscn" id="4_w7s6f"]
+[ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="5_ievuh"]
+[ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="6_4dtce"]
+[ext_resource type="PackedScene" uid="uid://begaypcqs5dk6" path="res://scenes/_5x_1.tscn" id="7_cjq1m"]
+
+[node name="Level 5" type="Node2D"]
+
+[node name="Big Block" parent="." instance=ExtResource("1_bsvv7")]
+position = Vector2(1075, 2605)
+
+[node name="Big Block2" parent="." instance=ExtResource("1_bsvv7")]
+position = Vector2(-1079, 705)
+
+[node name="Big Block3" parent="." instance=ExtResource("1_bsvv7")]
+position = Vector2(3043, 805)
+
+[node name="Big Block4" parent="." instance=ExtResource("1_bsvv7")]
+position = Vector2(937, -1145)
+
+[node name="End Door" parent="." instance=ExtResource("2_684wj")]
+position = Vector2(1734, 379)
+
+[node name="1x3_1" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(232, 1305)
+
+[node name="1x3_3" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(802, 736)
+
+[node name="1x3_10" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(1591, 1155)
+
+[node name="1x3_11" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(1499, 1155)
+
+[node name="1x3_8" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(1779, 1355)
+
+[node name="1x3_9" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(1498, 1355)
+
+[node name="1x3_7" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(1520, 722)
+
+[node name="1x3_6" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(985, 589)
+
+[node name="1x3_5" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(232, 705)
+
+[node name="1x3_4" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(1161, 471)
+
+[node name="Portal" parent="." instance=ExtResource("4_w7s6f")]
+position = Vector2(1571, 1029)
+
+[node name="Portal2" parent="." instance=ExtResource("4_w7s6f")]
+position = Vector2(235, 580)
+
+[node name="Box" parent="." instance=ExtResource("5_ievuh")]
+position = Vector2(670, 1058)
+
+[node name="Player" parent="." instance=ExtResource("6_4dtce")]
+position = Vector2(175, 1082)
+
+[node name="_5x1" parent="." instance=ExtResource("7_cjq1m")]
+position = Vector2(1355, 1180)
+
+[node name="_5x2" parent="." instance=ExtResource("7_cjq1m")]
+position = Vector2(375, 1330)

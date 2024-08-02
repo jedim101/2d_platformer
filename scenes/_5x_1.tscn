@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://begaypcqs5dk6"]
+
+[ext_resource type="Texture2D" uid="uid://c17n81b12j6b" path="res://assets/stones.png" id="1_wletp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_metag"]
+size = Vector2(100, 50)
+
+[node name="_5x1" type="StaticBody2D"]
+metadata/width = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_metag")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_repeat = 2
+scale = Vector2(5, 5)
+texture = ExtResource("1_wletp")
+region_enabled = true
+region_rect = Rect2(2.08165e-12, 2.08165e-12, 20, 10)
