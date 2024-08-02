@@ -1,0 +1,80 @@
+[gd_scene load_steps=8 format=3 uid="uid://be8cakglbn4a0"]
+
+[ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_42sib"]
+[ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://end_door.tscn" id="2_1tnhv"]
+[ext_resource type="PackedScene" uid="uid://6k3lpo2we22s" path="res://1x_3.tscn" id="3_mca5j"]
+[ext_resource type="PackedScene" uid="uid://be5smo81o07df" path="res://scenes/portal.tscn" id="4_hhhi5"]
+[ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="5_8o6nb"]
+[ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="6_pcp3v"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_k3nxl"]
+font_size = 100
+font_color = Color(0.743482, 0.743482, 0.743482, 1)
+
+[node name="Level 4" type="Node2D"]
+
+[node name="Big Block" parent="." instance=ExtResource("1_42sib")]
+position = Vector2(1075, 2605)
+
+[node name="Big Block2" parent="." instance=ExtResource("1_42sib")]
+position = Vector2(-1079, 705)
+
+[node name="Big Block3" parent="." instance=ExtResource("1_42sib")]
+position = Vector2(3043, 805)
+
+[node name="Big Block4" parent="." instance=ExtResource("1_42sib")]
+position = Vector2(937, -1145)
+
+[node name="End Door" parent="." instance=ExtResource("2_1tnhv")]
+position = Vector2(1734, 379)
+
+[node name="1x3" parent="." instance=ExtResource("3_mca5j")]
+position = Vector2(1732, 705)
+
+[node name="1x10" parent="." instance=ExtResource("3_mca5j")]
+position = Vector2(1732, 605)
+
+[node name="1x11" parent="." instance=ExtResource("3_mca5j")]
+position = Vector2(1732, 505)
+
+[node name="1x4" parent="." instance=ExtResource("3_mca5j")]
+position = Vector2(1452, 705)
+
+[node name="1x5" parent="." instance=ExtResource("3_mca5j")]
+position = Vector2(1171, 705)
+
+[node name="1x6" parent="." instance=ExtResource("3_mca5j")]
+position = Vector2(890, 705)
+
+[node name="1x7" parent="." instance=ExtResource("3_mca5j")]
+position = Vector2(610, 705)
+
+[node name="1x8" parent="." instance=ExtResource("3_mca5j")]
+position = Vector2(329, 705)
+
+[node name="1x9" parent="." instance=ExtResource("3_mca5j")]
+position = Vector2(48, 705)
+
+[node name="Portal" parent="." instance=ExtResource("4_hhhi5")]
+position = Vector2(1732, 1280)
+
+[node name="Portal2" parent="." instance=ExtResource("4_hhhi5")]
+position = Vector2(235, 580)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 99.0
+offset_top = 757.0
+offset_right = 1873.0
+offset_bottom = 1349.0
+text = "You can push boxes
+through portals"
+label_settings = SubResource("LabelSettings_k3nxl")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Box" parent="." instance=ExtResource("5_8o6nb")]
+position = Vector2(797, 1305)
+
+[node name="Player" parent="." instance=ExtResource("6_pcp3v")]
+position = Vector2(302, 1355)

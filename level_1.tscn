@@ -1,8 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://dam2d3clkum6r"]
+[gd_scene load_steps=5 format=3 uid="uid://dam2d3clkum6r"]
 
 [ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_pqpqh"]
 [ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="2_16j8g"]
 [ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://end_door.tscn" id="3_t3saw"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8ltlg"]
+font_size = 100
+font_color = Color(0.743482, 0.743482, 0.743482, 1)
 
 [node name="Level 1" type="Node2D"]
 
@@ -23,3 +27,13 @@ position = Vector2(3043, 805)
 
 [node name="Big Block4" parent="." instance=ExtResource("1_pqpqh")]
 position = Vector2(937, -1145)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 99.0
+offset_top = 105.0
+offset_right = 1873.0
+offset_bottom = 1047.0
+text = "Move to get to the exit door"
+label_settings = SubResource("LabelSettings_8ltlg")
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,10 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://ddvm8dcf1wiwf"]
+[gd_scene load_steps=7 format=3 uid="uid://ddvm8dcf1wiwf"]
 
 [ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_3e3vm"]
 [ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://end_door.tscn" id="2_tx01e"]
 [ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="3_ddrat"]
 [ext_resource type="PackedScene" uid="uid://6k3lpo2we22s" path="res://1x_3.tscn" id="4_j7bpe"]
 [ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="5_wmksb"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_a14v0"]
+font_size = 100
+font_color = Color(0.743482, 0.743482, 0.743482, 1)
 
 [node name="Level 2" type="Node2D"]
 
@@ -34,3 +38,13 @@ position = Vector2(1733, 905)
 
 [node name="Box" parent="." instance=ExtResource("5_wmksb")]
 position = Vector2(608, 1005)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 99.0
+offset_top = 105.0
+offset_right = 1873.0
+offset_bottom = 1047.0
+text = "You can push boxes"
+label_settings = SubResource("LabelSettings_a14v0")
+horizontal_alignment = 1
+vertical_alignment = 1
