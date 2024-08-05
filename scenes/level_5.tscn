@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b733h045erndr"]
+[gd_scene load_steps=9 format=3 uid="uid://b733h045erndr"]
 
 [ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_bsvv7"]
 [ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://scenes/end_door.tscn" id="2_684wj"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="5_ievuh"]
 [ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="6_4dtce"]
 [ext_resource type="PackedScene" uid="uid://begaypcqs5dk6" path="res://scenes/_5x_1.tscn" id="7_cjq1m"]
+[ext_resource type="PackedScene" uid="uid://c2e70275jdk73" path="res://scenes/1x_1.tscn" id="8_n10px"]
 
 [node name="Level 5" type="Node2D"]
 
@@ -23,13 +24,13 @@ position = Vector2(3043, 805)
 position = Vector2(937, -1145)
 
 [node name="End Door" parent="." instance=ExtResource("2_684wj")]
-position = Vector2(1734, 379)
+position = Vector2(1018, 1030)
 
 [node name="1x3_1" parent="." instance=ExtResource("3_n1gxf")]
 position = Vector2(232, 1305)
 
-[node name="1x3_3" parent="." instance=ExtResource("3_n1gxf")]
-position = Vector2(802, 736)
+[node name="1x3_2" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(233, 1206)
 
 [node name="1x3_10" parent="." instance=ExtResource("3_n1gxf")]
 position = Vector2(1591, 1155)
@@ -44,25 +45,31 @@ position = Vector2(1779, 1355)
 position = Vector2(1498, 1355)
 
 [node name="1x3_7" parent="." instance=ExtResource("3_n1gxf")]
-position = Vector2(1520, 722)
+position = Vector2(445, 1005)
+
+[node name="1x3_14" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(540, 1005)
 
 [node name="1x3_6" parent="." instance=ExtResource("3_n1gxf")]
-position = Vector2(985, 589)
-
-[node name="1x3_5" parent="." instance=ExtResource("3_n1gxf")]
-position = Vector2(232, 705)
+position = Vector2(731, 406)
 
 [node name="1x3_4" parent="." instance=ExtResource("3_n1gxf")]
-position = Vector2(1161, 471)
+position = Vector2(1012, 406)
+
+[node name="1x3_16" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(1293, 406)
 
 [node name="Portal" parent="." instance=ExtResource("4_w7s6f")]
-position = Vector2(1571, 1029)
+position = Vector2(1543, 1030)
 
 [node name="Portal2" parent="." instance=ExtResource("4_w7s6f")]
-position = Vector2(235, 580)
+position = Vector2(621, 281)
 
 [node name="Box" parent="." instance=ExtResource("5_ievuh")]
-position = Vector2(670, 1058)
+position = Vector2(585, 1302)
+
+[node name="Box2" parent="." instance=ExtResource("5_ievuh")]
+position = Vector2(259, 355)
 
 [node name="Player" parent="." instance=ExtResource("6_4dtce")]
 position = Vector2(175, 1082)
@@ -70,5 +77,54 @@ position = Vector2(175, 1082)
 [node name="_5x1" parent="." instance=ExtResource("7_cjq1m")]
 position = Vector2(1355, 1180)
 
+[node name="_5x3" parent="." instance=ExtResource("7_cjq1m")]
+position = Vector2(307, 431)
+
+[node name="_5x4" parent="." instance=ExtResource("7_cjq1m")]
+position = Vector2(217, 236)
+scale = Vector2(1, 1.25)
+
 [node name="_5x2" parent="." instance=ExtResource("7_cjq1m")]
 position = Vector2(375, 1330)
+
+[node name="1x1" parent="." instance=ExtResource("8_n10px")]
+position = Vector2(1681, 1055)
+
+[node name="1x2" parent="." instance=ExtResource("8_n10px")]
+position = Vector2(1682, 955)
+
+[node name="1x3" parent="." instance=ExtResource("8_n10px")]
+position = Vector2(1682, 855)
+
+[node name="1x3_12" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(1065, 1155)
+
+[node name="1x3_13" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(878, 1155)
+
+[node name="1x5" parent="." instance=ExtResource("8_n10px")]
+position = Vector2(1155, 1055)
+
+[node name="1x6" parent="." instance=ExtResource("8_n10px")]
+position = Vector2(1156, 955)
+
+[node name="1x7" parent="." instance=ExtResource("8_n10px")]
+position = Vector2(1156, 855)
+
+[node name="1x10" parent="." instance=ExtResource("8_n10px")]
+position = Vector2(1156, 755)
+
+[node name="1x11" parent="." instance=ExtResource("8_n10px")]
+position = Vector2(1157, 655)
+
+[node name="1x8" parent="." instance=ExtResource("8_n10px")]
+position = Vector2(734, 1105)
+
+[node name="1x9" parent="." instance=ExtResource("8_n10px")]
+position = Vector2(684, 1055)
+
+[node name="1x3_5" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(450, 406)
+
+[node name="1x3_15" parent="." instance=ExtResource("3_n1gxf")]
+position = Vector2(186, 155)

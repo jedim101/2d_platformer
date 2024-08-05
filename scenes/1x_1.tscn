@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c17n81b12j6b" path="res://assets/stones.png" id="1_krd4j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_metag"]
-size = Vector2(100, 50)
+size = Vector2(100, 100)
 
 [node name="1x1" type="StaticBody2D"]
 metadata/width = 0.0
