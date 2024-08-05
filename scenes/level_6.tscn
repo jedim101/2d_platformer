@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cf8hxoghtkqxh"]
+
+[ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_4djsj"]
+[ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="2_jawvb"]
+[ext_resource type="PackedScene" uid="uid://be5smo81o07df" path="res://scenes/portal.tscn" id="3_ylwd1"]
+
+[node name="Level 6" type="Node2D"]
+
+[node name="Big Block" parent="." instance=ExtResource("1_4djsj")]
+position = Vector2(1028, 2655)
+
+[node name="Big Block2" parent="." instance=ExtResource("1_4djsj")]
+position = Vector2(-1079, 705)
+
+[node name="Big Block3" parent="." instance=ExtResource("1_4djsj")]
+position = Vector2(3043, 805)
+
+[node name="Big Block4" parent="." instance=ExtResource("1_4djsj")]
+position = Vector2(937, -1145)
+
+[node name="Portal" parent="." instance=ExtResource("3_ylwd1")]
+position = Vector2(1730, 1330)
+
+[node name="Portal2" parent="." instance=ExtResource("3_ylwd1")]
+position = Vector2(274, 1255)
+scale = Vector2(2, 2)
+
+[node name="Player" parent="." instance=ExtResource("2_jawvb")]
+position = Vector2(911, 1074)
