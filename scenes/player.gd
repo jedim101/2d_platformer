@@ -29,6 +29,11 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 
+	if (velocity.x != 0 and not $Sprite2D/FrameAnimator.is_playing()):
+		$Sprite2D/FrameAnimator.play("walking")
+	elif (velocity.x == 0): 
+		$Sprite2D/FrameAnimator.stop()
+
 	move_and_slide()
 
 	for i in get_slide_collision_count():
