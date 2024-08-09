@@ -4,7 +4,22 @@
 [ext_resource type="Texture2D" uid="uid://bgexwvl6c7dk6" path="res://assets/Sprite Sheet.png" id="2_78brq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o3wc6"]
-size = Vector2(50, 95)
+size = Vector2(49, 95)
+
+[sub_resource type="Animation" id="Animation_wecpi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
 
 [sub_resource type="Animation" id="Animation_m62rr"]
 resource_name = "walking"
@@ -23,21 +38,6 @@ tracks/0/keys = {
 "values": [0, 1, 2]
 }
 
-[sub_resource type="Animation" id="Animation_wecpi"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_oktos"]
 _data = {
 "RESET": SubResource("Animation_wecpi"),
@@ -48,7 +48,7 @@ _data = {
 script = ExtResource("1_76ret")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -47.5)
+position = Vector2(2.08165e-12, -47.5)
 shape = SubResource("RectangleShape2D_o3wc6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
