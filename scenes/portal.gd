@@ -8,22 +8,21 @@ func _on_body_entered(body):
 
 	for portal in get_tree().get_nodes_in_group("portal"):
 		if self != portal:
-			if portal.disabled or scale.y < body.scale.y:
+			if portal.disabled or global_scale.y < body.global_scale.y:
 				break
 
 			disabled = true
 
-			var scale_factor = portal.scale / scale
+			var scale_factor = portal.global_scale / global_scale
 
 			body.global_position = portal.global_position - (global_position - body.global_position) * scale_factor
+			print(scale_factor)
 
-			# body.global_position += ( portal.global_position - body.global_position) * scale_factor
-			
-			# # b + (p - b) * s
-
-			# p - (c - b)
-
-			body.scale *= scale_factor
+			if body is RigidBody2D:
+				for child in body.get_children():
+					child.global_scale *= scale_factor
+			else:
+				body.global_scale *= scale_factor
 
 			await get_tree().create_timer(0.1).timeout
 			disabled = false
