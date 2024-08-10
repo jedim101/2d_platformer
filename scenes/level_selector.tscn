@@ -1,34 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://drf8poj4ucu1r"]
+[gd_scene load_steps=5 format=3 uid="uid://drf8poj4ucu1r"]
 
+[ext_resource type="StyleBox" uid="uid://dcpxyoobiwn16" path="res://assets/button.tres" id="1_4pds8"]
 [ext_resource type="Script" path="res://scripts/level_selector.gd" id="1_h5mss"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wq62i"]
-bg_color = Color(0.486275, 0.556863, 0.984314, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yo0af"]
-bg_color = Color(0.404205, 0.462513, 0.999991, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bhoqc"]
-bg_color = Color(0.403922, 0.462745, 1, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kfr0h"]
-bg_color = Color(0.552081, 0.59124, 0.75175, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
+[ext_resource type="StyleBox" uid="uid://bd1085xek35ky" path="res://assets/button_hover.tres" id="2_o6r6y"]
+[ext_resource type="StyleBox" uid="uid://btx4g08yddi7y" path="res://scenes/button_disabled.tres" id="3_ffdtl"]
 
 [node name="LevelSelector" type="Button"]
 custom_minimum_size = Vector2(200, 200)
@@ -42,11 +17,12 @@ theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 100
-theme_override_styles/normal = SubResource("StyleBoxFlat_wq62i")
-theme_override_styles/hover = SubResource("StyleBoxFlat_yo0af")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_bhoqc")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_kfr0h")
+theme_override_styles/normal = ExtResource("1_4pds8")
+theme_override_styles/hover = ExtResource("2_o6r6y")
+theme_override_styles/pressed = ExtResource("2_o6r6y")
+theme_override_styles/disabled = ExtResource("3_ffdtl")
 text = "1"
 script = ExtResource("1_h5mss")
+theme_override_styles/pressed = ExtResource("2_o6r6y")
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]
