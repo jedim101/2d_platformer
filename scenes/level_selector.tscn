@@ -23,6 +23,5 @@ theme_override_styles/pressed = ExtResource("2_o6r6y")
 theme_override_styles/disabled = ExtResource("3_ffdtl")
 text = "1"
 script = ExtResource("1_h5mss")
-theme_override_styles/pressed = ExtResource("2_o6r6y")
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

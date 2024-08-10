@@ -76,3 +76,7 @@ theme_override_styles/hover = ExtResource("3_80d7g")
 theme_override_styles/pressed = ExtResource("3_80d7g")
 text = "Quit
 "
+
+[connection signal="pressed" from="ColorRect/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

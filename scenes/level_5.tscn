@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b733h045erndr"]
+[gd_scene load_steps=10 format=3 uid="uid://b733h045erndr"]
 
 [ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_bsvv7"]
 [ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://scenes/end_door.tscn" id="2_684wj"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="6_4dtce"]
 [ext_resource type="PackedScene" uid="uid://begaypcqs5dk6" path="res://scenes/_5x_1.tscn" id="7_cjq1m"]
 [ext_resource type="PackedScene" uid="uid://c2e70275jdk73" path="res://scenes/1x_1.tscn" id="8_n10px"]
+[ext_resource type="PackedScene" uid="uid://dwn64unibblgj" path="res://scenes/pause_menu.tscn" id="9_q6hrt"]
 
 [node name="Level 5" type="Node2D"]
 
@@ -128,3 +129,5 @@ position = Vector2(450, 406)
 
 [node name="1x3_15" parent="." instance=ExtResource("3_n1gxf")]
 position = Vector2(186, 155)
+
+[node name="PauseMenu" parent="." instance=ExtResource("9_q6hrt")]
