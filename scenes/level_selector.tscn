@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://drf8poj4ucu1r"]
+[gd_scene load_steps=6 format=3 uid="uid://drf8poj4ucu1r"]
 
-[ext_resource type="Script" path="res://LevelSelector.gd" id="1_c6my7"]
+[ext_resource type="Script" path="res://scripts/level_selector.gd" id="1_h5mss"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wq62i"]
 bg_color = Color(0.486275, 0.556863, 0.984314, 1)
@@ -23,6 +23,13 @@ corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kfr0h"]
+bg_color = Color(0.552081, 0.59124, 0.75175, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
 [node name="LevelSelector" type="Button"]
 custom_minimum_size = Vector2(200, 200)
 offset_right = 8.0
@@ -38,7 +45,8 @@ theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxFlat_wq62i")
 theme_override_styles/hover = SubResource("StyleBoxFlat_yo0af")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_bhoqc")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_kfr0h")
 text = "1"
-script = ExtResource("1_c6my7")
+script = ExtResource("1_h5mss")
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]
