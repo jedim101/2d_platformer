@@ -1,15 +1,16 @@
 extends Control
 
 func _ready():
-	if Global.paused:
+	if get_tree().paused:
 		show()
 	else:
 		hide()
 
 func control_menu():
-	Global.paused = !Global.paused
+	print(get_tree().paused)
+	get_tree().paused = !get_tree().paused
 
-	if Global.paused:
+	if get_tree().paused:
 		show()
 	else:
 		hide()
@@ -23,9 +24,10 @@ func _on_resume_pressed():
 
 
 func _on_restart_pressed():
-	pass # Replace with function body.
+	get_tree().paused = false
+	get_tree().reload_current_scene()
 
 
 func _on_quit_pressed():
-	Global.paused = !Global.paused
+	get_tree().paused = false
 	get_tree().change_scene_to_file("res://scenes/main.tscn")

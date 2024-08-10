@@ -5,6 +5,7 @@
 [ext_resource type="StyleBox" uid="uid://bd1085xek35ky" path="res://assets/button_hover.tres" id="3_80d7g"]
 
 [node name="PauseMenu" type="Control"]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
