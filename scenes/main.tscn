@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://xi2r5qurslhq"]
+[gd_scene load_steps=3 format=3 uid="uid://xi2r5qurslhq"]
 
 [ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_lljn7"]
+[ext_resource type="PackedScene" uid="uid://drf8poj4ucu1r" path="res://scenes/level_selector.tscn" id="3_2st6j"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -30,74 +31,49 @@ theme_override_constants/h_separation = 50
 theme_override_constants/v_separation = 50
 columns = 4
 
-[node name="Level1" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(200, 200)
+[node name="LevelSelector" parent="GridContainer" instance=ExtResource("3_2st6j")]
 layout_mode = 2
-theme_override_font_sizes/font_size = 100
-text = "1"
 
-[node name="Level2" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(200, 200)
+[node name="LevelSelector2" parent="GridContainer" instance=ExtResource("3_2st6j")]
 layout_mode = 2
-theme_override_font_sizes/font_size = 100
 text = "2"
 
-[node name="Level3" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(200, 200)
+[node name="LevelSelector3" parent="GridContainer" instance=ExtResource("3_2st6j")]
 layout_mode = 2
-theme_override_font_sizes/font_size = 100
 text = "3"
 
-[node name="Level4" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(200, 200)
+[node name="LevelSelector4" parent="GridContainer" instance=ExtResource("3_2st6j")]
 layout_mode = 2
-theme_override_font_sizes/font_size = 100
 text = "4"
 
-[node name="Level5" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(200, 200)
+[node name="LevelSelector5" parent="GridContainer" instance=ExtResource("3_2st6j")]
 layout_mode = 2
-theme_override_font_sizes/font_size = 100
 text = "5"
 
-[node name="Level6" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(200, 200)
+[node name="LevelSelector6" parent="GridContainer" instance=ExtResource("3_2st6j")]
 layout_mode = 2
-theme_override_font_sizes/font_size = 100
 text = "6"
 
-[node name="Level7" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(200, 200)
+[node name="LevelSelector7" parent="GridContainer" instance=ExtResource("3_2st6j")]
 layout_mode = 2
-theme_override_font_sizes/font_size = 100
 text = "7"
 
-[node name="Level8" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(200, 200)
+[node name="LevelSelector8" parent="GridContainer" instance=ExtResource("3_2st6j")]
 layout_mode = 2
-theme_override_font_sizes/font_size = 100
 text = "8"
 
-[node name="Level9" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(200, 200)
+[node name="LevelSelector9" parent="GridContainer" instance=ExtResource("3_2st6j")]
 layout_mode = 2
-theme_override_font_sizes/font_size = 100
 text = "9"
 
-[node name="Level10" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(200, 200)
+[node name="LevelSelector10" parent="GridContainer" instance=ExtResource("3_2st6j")]
 layout_mode = 2
-theme_override_font_sizes/font_size = 100
 text = "10"
 
-[node name="Level11" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(200, 200)
+[node name="LevelSelector11" parent="GridContainer" instance=ExtResource("3_2st6j")]
 layout_mode = 2
-theme_override_font_sizes/font_size = 100
 text = "11"
 
-[node name="Level12" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(200, 200)
+[node name="LevelSelector12" parent="GridContainer" instance=ExtResource("3_2st6j")]
 layout_mode = 2
-theme_override_font_sizes/font_size = 100
 text = "12"
