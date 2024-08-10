@@ -11,7 +11,6 @@ func _on_body_entered(body):
 			var height: int = body.global_scale.y
 			if body is RigidBody2D:
 				height = body.get_child(0).global_scale.y
-				pass
 
 			if portal.disabled or global_scale.y < height:
 				break
@@ -24,7 +23,7 @@ func _on_body_entered(body):
 
 			if body is RigidBody2D:
 				for child in body.get_children():
-					child.global_scale *= scale_factor
+					child.apply_scale(scale_factor)
 			else:
 				body.global_scale *= scale_factor
 
