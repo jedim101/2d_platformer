@@ -73,7 +73,7 @@ position = Vector2(585, 1302)
 position = Vector2(259, 355)
 
 [node name="Player" parent="." instance=ExtResource("6_4dtce")]
-position = Vector2(175, 1082)
+position = Vector2(176, 1155)
 
 [node name="_5x1" parent="." instance=ExtResource("7_cjq1m")]
 position = Vector2(1355, 1180)
@@ -131,3 +131,4 @@ position = Vector2(450, 406)
 position = Vector2(186, 155)
 
 [node name="PauseMenu" parent="." instance=ExtResource("9_q6hrt")]
+visible = false
