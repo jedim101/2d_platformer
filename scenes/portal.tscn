@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://be5smo81o07df"]
 
-[ext_resource type="Script" path="res://scenes/portal.gd" id="1_dckvb"]
+[ext_resource type="Script" path="res://scripts/portal.gd" id="1_l77ji"]
 [ext_resource type="Texture2D" uid="uid://c5ibl5th7r8hv" path="res://assets/portals.png" id="2_8jxub"]
 
 [sub_resource type="Animation" id="Animation_u52fo"]
@@ -46,7 +46,7 @@ radius = 29.0
 height = 100.0
 
 [node name="Portal" type="Area2D" groups=["portal"]]
-script = ExtResource("1_dckvb")
+script = ExtResource("1_l77ji")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-1.19209e-07, -1)
