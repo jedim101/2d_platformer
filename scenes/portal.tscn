@@ -1,22 +1,66 @@
-[gd_scene load_steps=4 format=3 uid="uid://be5smo81o07df"]
+[gd_scene load_steps=7 format=3 uid="uid://be5smo81o07df"]
 
 [ext_resource type="Script" path="res://scenes/portal.gd" id="1_dckvb"]
-[ext_resource type="Texture2D" uid="uid://k07qai6b2qpg" path="res://assets/portal.png" id="2_pcf3n"]
+[ext_resource type="Texture2D" uid="uid://c5ibl5th7r8hv" path="res://assets/portals.png" id="2_8jxub"]
+
+[sub_resource type="Animation" id="Animation_homkc"]
+resource_name = "portal"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+
+[sub_resource type="Animation" id="Animation_u52fo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rv0da"]
+_data = {
+"RESET": SubResource("Animation_u52fo"),
+"portal": SubResource("Animation_homkc")
+}
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4hl82"]
-radius = 35.0
-height = 131.0
+radius = 37.0
+height = 138.0
 
 [node name="Portal" type="Area2D" groups=["portal"]]
 script = ExtResource("1_dckvb")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0.5, 0)
-scale = Vector2(4.95, 5)
-texture = ExtResource("2_pcf3n")
+position = Vector2(0, 7.45058e-09)
+scale = Vector2(0.4975, 0.4975)
+texture = ExtResource("2_8jxub")
+hframes = 3
+
+[node name="PortalAnimator" type="AnimationPlayer" parent="Sprite2D"]
+libraries = {
+"": SubResource("AnimationLibrary_rv0da")
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 9.5)
+position = Vector2(0, 6)
 shape = SubResource("CapsuleShape2D_4hl82")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

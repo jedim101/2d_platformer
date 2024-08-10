@@ -2,6 +2,9 @@ extends Area2D
 
 var disabled = false
 
+func _ready():
+	$Sprite2D/PortalAnimator.play("portal")
+
 func _on_body_entered(body):
 	if body is StaticBody2D:
 		return
