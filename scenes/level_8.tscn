@@ -45,11 +45,11 @@ position = Vector2(794, 1105)
 position = Vector2(1679, 1055)
 
 [node name="Portal" parent="." instance=ExtResource("4_10m4c")]
-position = Vector2(1043, 1117)
+position = Vector2(1048, 1128)
 scale = Vector2(0.5, 0.5)
 
 [node name="Portal2" parent="." instance=ExtResource("4_10m4c")]
-position = Vector2(326, 980)
+position = Vector2(326, 1001)
 
 [node name="Box" parent="." instance=ExtResource("5_7nid8")]
 position = Vector2(742, 1005)

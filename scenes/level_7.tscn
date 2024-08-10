@@ -47,10 +47,10 @@ position = Vector2(1542, 880)
 position = Vector2(1442, 880)
 
 [node name="Portal" parent="." instance=ExtResource("2_kifw5")]
-position = Vector2(1500, 981)
+position = Vector2(1496, 1001)
 
 [node name="Portal2" parent="." instance=ExtResource("2_kifw5")]
-position = Vector2(234, 705)
+position = Vector2(231, 747)
 scale = Vector2(2, 2)
 
 [node name="Player" parent="." instance=ExtResource("4_vj56d")]

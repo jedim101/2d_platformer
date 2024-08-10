@@ -12,6 +12,17 @@ font_color = Color(0.743482, 0.743482, 0.743482, 1)
 
 [node name="Level 3" type="Node2D"]
 
+[node name="Label" type="Label" parent="."]
+offset_left = 99.0
+offset_top = 757.0
+offset_right = 1873.0
+offset_bottom = 1349.0
+text = "These are portals"
+label_settings = SubResource("LabelSettings_k3nxl")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
 [node name="Big Block" parent="." instance=ExtResource("1_f3fof")]
 position = Vector2(1075, 2605)
 
@@ -49,21 +60,10 @@ position = Vector2(329, 705)
 position = Vector2(48, 705)
 
 [node name="Portal" parent="." instance=ExtResource("4_evqi6")]
-position = Vector2(1732, 1280)
+position = Vector2(1732, 1301)
 
 [node name="Portal2" parent="." instance=ExtResource("4_evqi6")]
-position = Vector2(235, 580)
+position = Vector2(235, 601)
 
 [node name="Player" parent="." instance=ExtResource("3_73hxe")]
 position = Vector2(302, 1355)
-
-[node name="Label" type="Label" parent="."]
-offset_left = 99.0
-offset_top = 757.0
-offset_right = 1873.0
-offset_bottom = 1349.0
-text = "These are portals"
-label_settings = SubResource("LabelSettings_k3nxl")
-horizontal_alignment = 1
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
