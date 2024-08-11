@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://c4c6ek0ijee11"]
+[gd_scene load_steps=8 format=3 uid="uid://c4c6ek0ijee11"]
 
+[ext_resource type="PackedScene" uid="uid://be5smo81o07df" path="res://scenes/portal.tscn" id="1_3figy"]
 [ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="3_ubaqr"]
 [ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://scenes/end_door.tscn" id="4_wpknw"]
 [ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="5_0mems"]
 [ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="6_hoi5i"]
+[ext_resource type="PackedScene" uid="uid://begaypcqs5dk6" path="res://scenes/_5x_1.tscn" id="8_do621"]
 [ext_resource type="PackedScene" uid="uid://dwn64unibblgj" path="res://scenes/pause_menu.tscn" id="9_0yea6"]
 
 [node name="Level 13" type="Node2D"]
@@ -20,137 +22,83 @@ position = Vector2(3043, 805)
 [node name="Big Block4" parent="." instance=ExtResource("3_ubaqr")]
 position = Vector2(937, -1145)
 
+[node name="_5x1" parent="." instance=ExtResource("8_do621")]
+position = Vector2(142, 780)
+
+[node name="_5x2" parent="." instance=ExtResource("8_do621")]
+position = Vector2(292, 880)
+
+[node name="_5x3" parent="." instance=ExtResource("8_do621")]
+position = Vector2(142, 980)
+
+[node name="_5x4" parent="." instance=ExtResource("8_do621")]
+position = Vector2(292, 1081)
+
+[node name="_5x5" parent="." instance=ExtResource("8_do621")]
+position = Vector2(142, 1180)
+
+[node name="_5x6" parent="." instance=ExtResource("8_do621")]
+position = Vector2(292, 1280)
+
+[node name="_5x7" parent="." instance=ExtResource("8_do621")]
+position = Vector2(142, 1380)
+
 [node name="End Door" parent="." instance=ExtResource("4_wpknw")]
-position = Vector2(1775, 1330)
+position = Vector2(142, 680)
 
 [node name="Box" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1634, 1355)
+position = Vector2(1061, 1354)
 
 [node name="Box2" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1474, 1355)
-
-[node name="Box3" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1154, 1355)
-
-[node name="Box4" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1314, 1355)
-
-[node name="Box5" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(994, 1355)
-
-[node name="Box6" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(834, 1355)
-
-[node name="Box7" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(514, 1355)
-
-[node name="Box8" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(674, 1355)
-
-[node name="Box9" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1714, 1255)
+position = Vector2(960, 1353)
 
 [node name="Box10" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1554, 1255)
-
-[node name="Box11" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1234, 1255)
+position = Vector2(1264, 1298)
 
 [node name="Box12" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1394, 1255)
-
-[node name="Box13" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1074, 1255)
-
-[node name="Box14" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(914, 1255)
-
-[node name="Box15" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(594, 1255)
-
-[node name="Box16" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(754, 1255)
+position = Vector2(998, 1243)
 
 [node name="Box18" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1634, 1155)
-
-[node name="Box19" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1314, 1155)
+position = Vector2(860, 1155)
 
 [node name="Box20" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1474, 1155)
-
-[node name="Box21" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1154, 1155)
-
-[node name="Box22" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(994, 1155)
-
-[node name="Box23" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(674, 1155)
-
-[node name="Box24" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(834, 1155)
+position = Vector2(1119, 1193)
 
 [node name="Box26" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1714, 1055)
+position = Vector2(1660, 295)
 
 [node name="Box27" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1394, 1055)
+position = Vector2(1153, 1054)
 
 [node name="Box28" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1554, 1055)
-
-[node name="Box29" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1234, 1055)
-
-[node name="Box30" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1074, 1055)
-
-[node name="Box31" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(754, 1055)
-
-[node name="Box32" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(914, 1055)
+position = Vector2(931, 849)
 
 [node name="Box34" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1474, 955)
+position = Vector2(627, 1065)
 
 [node name="Box35" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1634, 955)
-
-[node name="Box36" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1314, 955)
-
-[node name="Box37" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1154, 955)
-
-[node name="Box38" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(834, 955)
-
-[node name="Box39" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(994, 955)
+position = Vector2(854, 693)
 
 [node name="Box41" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1554, 855)
-
-[node name="Box42" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1714, 855)
-
-[node name="Box43" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1394, 855)
+position = Vector2(1465, 377)
 
 [node name="Box44" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1234, 855)
+position = Vector2(1465, 481)
 
-[node name="Box45" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(914, 855)
+[node name="Box42" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1104, 917)
 
-[node name="Box46" parent="." instance=ExtResource("5_0mems")]
-position = Vector2(1074, 855)
+[node name="Box43" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(403, 851)
 
 [node name="Player" parent="." instance=ExtResource("6_hoi5i")]
-position = Vector2(191, 1321)
+position = Vector2(464, 1375)
+
+[node name="Portal2" parent="." instance=ExtResource("1_3figy")]
+position = Vector2(1660, 163)
+
+[node name="Portal" parent="." instance=ExtResource("1_3figy")]
+position = Vector2(1660, 1351)
 
 [node name="PauseMenu" parent="." instance=ExtResource("9_0yea6")]
 visible = false
