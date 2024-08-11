@@ -25,6 +25,7 @@ func _on_body_entered(body):
 			body.global_position = portal.global_position - (global_position - body.global_position) * scale_factor
 
 			if body is RigidBody2D:
+				body.mass *= scale_factor.x * scale_factor.y
 				for child in body.get_children():
 					child.apply_scale(scale_factor)
 			else:
