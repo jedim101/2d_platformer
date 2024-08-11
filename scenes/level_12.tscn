@@ -1,0 +1,73 @@
+[gd_scene load_steps=10 format=3 uid="uid://xg4hhg8tqklu"]
+
+[ext_resource type="PackedScene" uid="uid://be5smo81o07df" path="res://scenes/portal.tscn" id="1_po7bp"]
+[ext_resource type="PackedScene" uid="uid://c2e70275jdk73" path="res://scenes/1x_1.tscn" id="2_x4wd4"]
+[ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="3_k0npt"]
+[ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://scenes/end_door.tscn" id="4_pmcrs"]
+[ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="5_21yv5"]
+[ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="6_rc2ww"]
+[ext_resource type="PackedScene" uid="uid://6k3lpo2we22s" path="res://scenes/1x_3.tscn" id="7_q67wq"]
+[ext_resource type="PackedScene" uid="uid://begaypcqs5dk6" path="res://scenes/_5x_1.tscn" id="8_ftrap"]
+[ext_resource type="PackedScene" uid="uid://dwn64unibblgj" path="res://scenes/pause_menu.tscn" id="9_oe8qv"]
+
+[node name="Level 12" type="Node2D"]
+
+[node name="Portal2" parent="." instance=ExtResource("1_po7bp")]
+position = Vector2(464, 1297)
+scale = Vector2(2, 2)
+
+[node name="1x9" parent="." instance=ExtResource("2_x4wd4")]
+position = Vector2(142, 904)
+
+[node name="1x10" parent="." instance=ExtResource("2_x4wd4")]
+position = Vector2(242, 904)
+
+[node name="Big Block" parent="." instance=ExtResource("3_k0npt")]
+position = Vector2(1025, 2654)
+
+[node name="Big Block2" parent="." instance=ExtResource("3_k0npt")]
+position = Vector2(-1079, 705)
+
+[node name="Big Block3" parent="." instance=ExtResource("3_k0npt")]
+position = Vector2(3043, 805)
+
+[node name="Big Block5" parent="." instance=ExtResource("3_k0npt")]
+position = Vector2(2805, 1854)
+
+[node name="Big Block4" parent="." instance=ExtResource("3_k0npt")]
+position = Vector2(937, -1145)
+
+[node name="End Door" parent="." instance=ExtResource("4_pmcrs")]
+position = Vector2(1756, 454)
+scale = Vector2(2, 2)
+
+[node name="Portal" parent="." instance=ExtResource("1_po7bp")]
+position = Vector2(606, 739)
+scale = Vector2(4, 4)
+
+[node name="Box2" parent="." instance=ExtResource("5_21yv5")]
+position = Vector2(892, 1354)
+
+[node name="Box6" parent="." instance=ExtResource("5_21yv5")]
+position = Vector2(242, 1354)
+
+[node name="Box3" parent="." instance=ExtResource("5_21yv5")]
+position = Vector2(646, 1355)
+
+[node name="Player" parent="." instance=ExtResource("6_rc2ww")]
+position = Vector2(762, 1404)
+
+[node name="1x17" parent="." instance=ExtResource("7_q67wq")]
+position = Vector2(232, 1004)
+
+[node name="1x18" parent="." instance=ExtResource("7_q67wq")]
+position = Vector2(513, 1004)
+
+[node name="1x19" parent="." instance=ExtResource("7_q67wq")]
+position = Vector2(794, 1004)
+
+[node name="_5x1" parent="." instance=ExtResource("8_ftrap")]
+position = Vector2(142, 1379)
+
+[node name="PauseMenu" parent="." instance=ExtResource("9_oe8qv")]
+visible = false
