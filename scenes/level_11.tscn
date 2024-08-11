@@ -19,6 +19,9 @@ scale = Vector2(2, 2)
 [node name="1x4" parent="." instance=ExtResource("8_10lx5")]
 position = Vector2(1822, 905)
 
+[node name="1x7" parent="." instance=ExtResource("8_10lx5")]
+position = Vector2(1722, 905)
+
 [node name="1x5" parent="." instance=ExtResource("8_10lx5")]
 position = Vector2(142, 1105)
 
@@ -62,7 +65,7 @@ position = Vector2(937, -1145)
 position = Vector2(1772, 780)
 
 [node name="Portal" parent="." instance=ExtResource("4_h5su4")]
-position = Vector2(1589, 1102)
+position = Vector2(1076, 1101)
 
 [node name="Box2" parent="." instance=ExtResource("5_xw0k7")]
 position = Vector2(361, 1103)
@@ -76,9 +79,6 @@ position = Vector2(513, 405)
 [node name="1x17" parent="." instance=ExtResource("7_wah5r")]
 position = Vector2(232, 405)
 
-[node name="PauseMenu" parent="." instance=ExtResource("9_bh68b")]
-visible = false
-
 [node name="_5x1" parent="." instance=ExtResource("1_yk8wx")]
 position = Vector2(1822, 680)
 
@@ -90,3 +90,6 @@ position = Vector2(1623, 680)
 
 [node name="Box" parent="." instance=ExtResource("5_xw0k7")]
 position = Vector2(843, 562)
+
+[node name="PauseMenu" parent="." instance=ExtResource("9_bh68b")]
+visible = false
