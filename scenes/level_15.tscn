@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://dt2vcsf1dvy52"]
+
+[ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_lj5ml"]
+[ext_resource type="PackedScene" uid="uid://dsqqg6v1wdwtq" path="res://scenes/orange_portal.tscn" id="2_4ptne"]
+[ext_resource type="PackedScene" uid="uid://dg6kl5bnwvmoo" path="res://scenes/blue_portal.tscn" id="3_q6iyr"]
+[ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="7_jli4j"]
+[ext_resource type="PackedScene" uid="uid://dwn64unibblgj" path="res://scenes/pause_menu.tscn" id="8_y1fre"]
+
+[node name="Level 15" type="Node2D"]
+
+[node name="Big Block" parent="." instance=ExtResource("1_lj5ml")]
+position = Vector2(1025, 2655)
+
+[node name="Big Block2" parent="." instance=ExtResource("1_lj5ml")]
+position = Vector2(-1079, 705)
+
+[node name="Big Block3" parent="." instance=ExtResource("1_lj5ml")]
+position = Vector2(3043, 805)
+
+[node name="Big Block4" parent="." instance=ExtResource("1_lj5ml")]
+position = Vector2(937, -1145)
+
+[node name="OrangePortal" parent="." instance=ExtResource("2_4ptne")]
+position = Vector2(1575, 1351)
+
+[node name="OrangePortal2" parent="." instance=ExtResource("2_4ptne")]
+position = Vector2(183, 1351)
+
+[node name="BluePortal" parent="." instance=ExtResource("3_q6iyr")]
+position = Vector2(314, 1351)
+
+[node name="BluePortal2" parent="." instance=ExtResource("3_q6iyr")]
+position = Vector2(1727, 1351)
+
+[node name="Player" parent="." instance=ExtResource("7_jli4j")]
+position = Vector2(929, 1371)
+
+[node name="PauseMenu" parent="." instance=ExtResource("8_y1fre")]
+visible = false

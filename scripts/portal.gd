@@ -10,7 +10,7 @@ func _on_body_entered(body):
 		return
 
 	for portal in get_tree().get_nodes_in_group("portal"):
-		if self != portal:
+		if self != portal && self.get_meta("value") == portal.get_meta("value"):
 			var height: int = body.global_scale.y
 			if body is RigidBody2D:
 				height = body.get_child(0).global_scale.y
@@ -25,7 +25,6 @@ func _on_body_entered(body):
 			body.global_position = portal.global_position - (global_position - body.global_position) * scale_factor
 
 			if body is RigidBody2D:
-				# body.mass *= scale_factor.x * scale_factor.y
 				for child in body.get_children():
 					child.apply_scale(scale_factor)
 			else:

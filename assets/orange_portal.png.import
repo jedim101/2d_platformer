@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5ibl5th7r8hv"
-path="res://.godot/imported/portals.png-3ac0699c455023b1965c715fa3ee88c5.ctex"
+uid="uid://0eqv3ilusrsu"
+path="res://.godot/imported/orange_portal.png-9195ec66bff92c5ad8b542045f48da90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portals.png"
-dest_files=["res://.godot/imported/portals.png-3ac0699c455023b1965c715fa3ee88c5.ctex"]
+source_file="res://assets/orange_portal.png"
+dest_files=["res://.godot/imported/orange_portal.png-9195ec66bff92c5ad8b542045f48da90.ctex"]
 
 [params]
 
