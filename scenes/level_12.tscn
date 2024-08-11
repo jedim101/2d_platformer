@@ -34,6 +34,9 @@ position = Vector2(3043, 805)
 [node name="Big Block5" parent="." instance=ExtResource("3_k0npt")]
 position = Vector2(2805, 1854)
 
+[node name="Big Block6" parent="." instance=ExtResource("3_k0npt")]
+position = Vector2(2805, -946)
+
 [node name="Big Block4" parent="." instance=ExtResource("3_k0npt")]
 position = Vector2(937, -1145)
 
