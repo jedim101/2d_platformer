@@ -12,7 +12,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 func _physics_process(delta):
 	var speed = SPEED * scale.x
 	var jump_velocity = JUMP_VELOCITY * sqrt(scale.y)
-	var push_force = PUSH_FORCE * scale.x * scale.y
+	# var push_force = PUSH_FORCE * scale.x * scale.y
 
 	# Add the gravity.
 	if not is_on_floor():
@@ -40,4 +40,4 @@ func _physics_process(delta):
 	for i in get_slide_collision_count():
 		var c = get_slide_collision(i)
 		if c.get_collider() is RigidBody2D:
-			c.get_collider().apply_central_impulse(-c.get_normal() * push_force)
+			c.get_collider().apply_central_impulse(-c.get_normal() * PUSH_FORCE)
