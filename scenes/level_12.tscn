@@ -13,7 +13,7 @@
 [node name="Level 12" type="Node2D"]
 
 [node name="Portal2" parent="." instance=ExtResource("1_po7bp")]
-position = Vector2(464, 1297)
+position = Vector2(464, 1298)
 scale = Vector2(2, 2)
 
 [node name="1x9" parent="." instance=ExtResource("2_x4wd4")]
@@ -23,7 +23,7 @@ position = Vector2(142, 904)
 position = Vector2(242, 904)
 
 [node name="Big Block" parent="." instance=ExtResource("3_k0npt")]
-position = Vector2(1025, 2654)
+position = Vector2(1025, 2655)
 
 [node name="Big Block2" parent="." instance=ExtResource("3_k0npt")]
 position = Vector2(-1079, 705)
@@ -52,7 +52,7 @@ scale = Vector2(4, 4)
 position = Vector2(892, 1354)
 
 [node name="Box6" parent="." instance=ExtResource("5_21yv5")]
-position = Vector2(242, 1354)
+position = Vector2(242, 1355)
 
 [node name="Box3" parent="." instance=ExtResource("5_21yv5")]
 position = Vector2(646, 1355)
@@ -70,7 +70,7 @@ position = Vector2(513, 1004)
 position = Vector2(794, 1004)
 
 [node name="_5x1" parent="." instance=ExtResource("8_ftrap")]
-position = Vector2(142, 1379)
+position = Vector2(142, 1380)
 
 [node name="PauseMenu" parent="." instance=ExtResource("9_oe8qv")]
 visible = false

@@ -1,0 +1,198 @@
+[gd_scene load_steps=6 format=3 uid="uid://c4c6ek0ijee11"]
+
+[ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="3_ubaqr"]
+[ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://scenes/end_door.tscn" id="4_wpknw"]
+[ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="5_0mems"]
+[ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="6_hoi5i"]
+[ext_resource type="PackedScene" uid="uid://dwn64unibblgj" path="res://scenes/pause_menu.tscn" id="9_0yea6"]
+
+[node name="Level 13" type="Node2D"]
+
+[node name="Big Block" parent="." instance=ExtResource("3_ubaqr")]
+position = Vector2(1025, 2655)
+
+[node name="Big Block2" parent="." instance=ExtResource("3_ubaqr")]
+position = Vector2(-1079, 705)
+
+[node name="Big Block3" parent="." instance=ExtResource("3_ubaqr")]
+position = Vector2(3043, 805)
+
+[node name="Big Block5" parent="." instance=ExtResource("3_ubaqr")]
+position = Vector2(2905, 1555)
+
+[node name="Big Block4" parent="." instance=ExtResource("3_ubaqr")]
+position = Vector2(937, -1145)
+
+[node name="End Door" parent="." instance=ExtResource("4_wpknw")]
+position = Vector2(1804, 230)
+
+[node name="Box72" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1634, 954)
+
+[node name="Box73" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1634, 854)
+
+[node name="Box81" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1634, 754)
+
+[node name="Box82" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1634, 654)
+
+[node name="Box83" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1634, 554)
+
+[node name="Box84" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1634, 454)
+
+[node name="Box93" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1634, 1154)
+
+[node name="Box94" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1634, 1054)
+
+[node name="Box101" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1634, 1354)
+
+[node name="Box102" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1634, 1254)
+
+[node name="Box74" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1484, 954)
+
+[node name="Box75" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1484, 854)
+
+[node name="Box85" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1484, 754)
+
+[node name="Box86" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1484, 654)
+
+[node name="Box87" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1484, 554)
+
+[node name="Box95" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1484, 1154)
+
+[node name="Box96" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1484, 1054)
+
+[node name="Box103" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1484, 1354)
+
+[node name="Box104" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1484, 1254)
+
+[node name="Box76" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1334, 954)
+
+[node name="Box77" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1334, 854)
+
+[node name="Box88" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1334, 754)
+
+[node name="Box89" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1334, 654)
+
+[node name="Box97" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1334, 1154)
+
+[node name="Box98" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1334, 1054)
+
+[node name="Box105" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1334, 1354)
+
+[node name="Box106" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1334, 1254)
+
+[node name="Box78" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1184, 954)
+
+[node name="Box79" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1184, 854)
+
+[node name="Box90" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1184, 754)
+
+[node name="Box99" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1184, 1154)
+
+[node name="Box100" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1184, 1054)
+
+[node name="Box107" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1184, 1354)
+
+[node name="Box108" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1184, 1254)
+
+[node name="Box80" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1034, 954)
+
+[node name="Box91" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1034, 854)
+
+[node name="Box109" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1034, 1154)
+
+[node name="Box110" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1034, 1054)
+
+[node name="Box111" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1034, 1354)
+
+[node name="Box112" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(1034, 1254)
+
+[node name="Box92" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(884, 954)
+
+[node name="Box113" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(884, 1154)
+
+[node name="Box114" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(884, 1054)
+
+[node name="Box115" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(884, 1354)
+
+[node name="Box116" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(884, 1254)
+
+[node name="Box117" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(734, 1154)
+
+[node name="Box118" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(734, 1054)
+
+[node name="Box119" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(734, 1354)
+
+[node name="Box120" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(734, 1254)
+
+[node name="Box121" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(584, 1154)
+
+[node name="Box122" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(584, 1354)
+
+[node name="Box123" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(584, 1254)
+
+[node name="Box124" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(434, 1354)
+
+[node name="Box126" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(284, 1354)
+
+[node name="Box125" parent="." instance=ExtResource("5_0mems")]
+position = Vector2(434, 1254)
+
+[node name="Player" parent="." instance=ExtResource("6_hoi5i")]
+position = Vector2(191, 1321)
+
+[node name="PauseMenu" parent="." instance=ExtResource("9_0yea6")]
+visible = false
