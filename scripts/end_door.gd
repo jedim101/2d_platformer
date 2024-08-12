@@ -2,7 +2,7 @@ extends Area2D
 
 
 func _on_body_entered(body):
-	if body is CharacterBody2D:
+	if body is CharacterBody2D && body.global_scale.y <= global_scale.y:
 		var next_level = int(get_tree().current_scene.name.substr(6)) + 1
 		Global.unlocked_level = max(Global.unlocked_level, next_level)
 		
