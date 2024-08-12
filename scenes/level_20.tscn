@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dmhbah10riwhj"]
+[gd_scene load_steps=10 format=3 uid="uid://dmhbah10riwhj"]
 
 [ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_a5lk5"]
 [ext_resource type="PackedScene" uid="uid://dsqqg6v1wdwtq" path="res://scenes/orange_portal.tscn" id="2_uo338"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dg6kl5bnwvmoo" path="res://scenes/blue_portal.tscn" id="3_1g11m"]
 [ext_resource type="PackedScene" uid="uid://b60edsgtceue1" path="res://scenes/green_portal.tscn" id="4_h2ce6"]
 [ext_resource type="PackedScene" uid="uid://ds4shqthemipk" path="res://scenes/orange_floating_portal.tscn" id="4_xk8kk"]
+[ext_resource type="PackedScene" uid="uid://pkckaxf2ik3h" path="res://scenes/blue_floating_portal.tscn" id="7_2oj31"]
 [ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="8_liscm"]
 [ext_resource type="PackedScene" uid="uid://dwn64unibblgj" path="res://scenes/pause_menu.tscn" id="11_rxtpv"]
 
@@ -30,13 +31,16 @@ position = Vector2(257, 834)
 position = Vector2(255, 1346)
 
 [node name="OrangeFloatingPortal" parent="." instance=ExtResource("4_xk8kk")]
-position = Vector2(1090, 823)
+position = Vector2(981, 823)
 
 [node name="OrangePortal" parent="." instance=ExtResource("2_uo338")]
-position = Vector2(1091, 1346)
+position = Vector2(982, 1346)
 
 [node name="BluePortal" parent="." instance=ExtResource("3_1g11m")]
 position = Vector2(1652, 1346)
+
+[node name="BlueFloatingPortal" parent="." instance=ExtResource("7_2oj31")]
+position = Vector2(1655, 827)
 
 [node name="Player" parent="." instance=ExtResource("8_liscm")]
 position = Vector2(643, 1396)
