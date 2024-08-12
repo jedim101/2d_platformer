@@ -22,7 +22,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="End Door" parent="." instance=ExtResource("3_t3saw")]
-position = Vector2(1752, 974)
+position = Vector2(1750, 1050)
 
 [node name="Player" parent="." instance=ExtResource("2_16j8g")]
 position = Vector2(304, 1050)

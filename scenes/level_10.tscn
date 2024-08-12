@@ -28,7 +28,7 @@ position = Vector2(150, 925)
 position = Vector2(1000, 2400)
 
 [node name="End Door" parent="." instance=ExtResource("3_e2nbx")]
-position = Vector2(1800, 363)
+position = Vector2(1800, 400)
 scale = Vector2(0.5, 0.5)
 
 [node name="BluePortal" parent="." instance=ExtResource("4_5capm")]

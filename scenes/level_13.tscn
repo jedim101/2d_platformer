@@ -18,7 +18,7 @@ position = Vector2(350, 600)
 position = Vector2(1650, 1400)
 
 [node name="End Door" parent="." instance=ExtResource("4_wpknw")]
-position = Vector2(250, 1025)
+position = Vector2(250, 1100)
 
 [node name="Box" parent="." instance=ExtResource("5_0mems")]
 position = Vector2(1061, 1354)

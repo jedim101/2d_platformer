@@ -23,7 +23,7 @@ position = Vector2(3150, 750)
 position = Vector2(950, -1150)
 
 [node name="End Door" parent="." instance=ExtResource("3_i0xrw")]
-position = Vector2(1750, 750)
+position = Vector2(1750, 900)
 scale = Vector2(2, 2)
 
 [node name="1x3" parent="." instance=ExtResource("7_verno")]
