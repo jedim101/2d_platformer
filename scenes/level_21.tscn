@@ -34,13 +34,13 @@ position = Vector2(950, -1150)
 position = Vector2(300, 1400)
 
 [node name="GreenFloatingPortal" parent="." instance=ExtResource("3_g473s")]
-position = Vector2(1778, 500)
+position = Vector2(1778, 550)
 
 [node name="OrangeFloatingPortal" parent="." instance=ExtResource("4_l52l7")]
-position = Vector2(652, 330)
+position = Vector2(652, 380)
 
 [node name="OrangeFloatingPortal2" parent="." instance=ExtResource("4_l52l7")]
-position = Vector2(1200, 1000)
+position = Vector2(1200, 1050)
 
 [node name="BluePortal" parent="." instance=ExtResource("5_a2aqp")]
 position = Vector2(1000, 850)
