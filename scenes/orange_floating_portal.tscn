@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://c0caskoxvfetl"]
+[gd_scene load_steps=7 format=3 uid="uid://ds4shqthemipk"]
 
-[ext_resource type="Script" path="res://scripts/portal.gd" id="1_kd2b3"]
-[ext_resource type="Texture2D" uid="uid://6ophrnkqjhe1" path="res://assets/green_floating.png" id="2_gtpb6"]
+[ext_resource type="Script" path="res://scripts/portal.gd" id="1_ocbi0"]
+[ext_resource type="Texture2D" uid="uid://tt7wh3l6i4oi" path="res://assets/orange_floating.png" id="2_y6p1j"]
 
 [sub_resource type="Animation" id="Animation_u52fo"]
 length = 0.001
@@ -41,17 +41,16 @@ _data = {
 "portal": SubResource("Animation_homkc")
 }
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_3jl3p"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_eocoq"]
 radius = 50.0
 
-[node name="GreenFloatingPortal" type="Area2D" groups=["portal"]]
-script = ExtResource("1_kd2b3")
-metadata/value = 2
+[node name="OrangeFloatingPortal" type="Area2D" groups=["portal"]]
+script = ExtResource("1_ocbi0")
+metadata/value = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(2.08165e-12, 2.08165e-12)
 scale = Vector2(0.75, 1)
-texture = ExtResource("2_gtpb6")
+texture = ExtResource("2_y6p1j")
 hframes = 3
 
 [node name="PortalAnimator" type="AnimationPlayer" parent="Sprite2D"]
@@ -62,6 +61,6 @@ libraries = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 scale = Vector2(0.75, 1)
-shape = SubResource("CircleShape2D_3jl3p")
+shape = SubResource("CircleShape2D_eocoq")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
