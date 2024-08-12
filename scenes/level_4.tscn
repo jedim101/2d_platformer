@@ -15,6 +15,18 @@ font_color = Color(0.743482, 0.743482, 0.743482, 1)
 
 [node name="Level 4" type="Node2D"]
 
+[node name="Label" type="Label" parent="."]
+offset_left = 99.0
+offset_top = 757.0
+offset_right = 1873.0
+offset_bottom = 1349.0
+text = "You can push boxes
+through portals"
+label_settings = SubResource("LabelSettings_k3nxl")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
 [node name="Big Block" parent="." instance=ExtResource("1_42sib")]
 position = Vector2(950, 2650)
 
@@ -49,22 +61,10 @@ position = Vector2(350, 750)
 position = Vector2(50, 750)
 
 [node name="BluePortal" parent="." instance=ExtResource("3_y8y4n")]
-position = Vector2(1750, 1346)
+position = Vector2(1750, 1400)
 
 [node name="BluePortal2" parent="." instance=ExtResource("3_y8y4n")]
-position = Vector2(300, 646)
-
-[node name="Label" type="Label" parent="."]
-offset_left = 99.0
-offset_top = 757.0
-offset_right = 1873.0
-offset_bottom = 1349.0
-text = "You can push boxes
-through portals"
-label_settings = SubResource("LabelSettings_k3nxl")
-horizontal_alignment = 1
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
+position = Vector2(300, 700)
 
 [node name="End Door" parent="." instance=ExtResource("2_1tnhv")]
 position = Vector2(1752, 425)

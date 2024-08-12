@@ -14,17 +14,17 @@
 [node name="Level 16" type="Node2D"]
 
 [node name="OrangePortal" parent="." instance=ExtResource("2_o52yx")]
-position = Vector2(1403, 1351)
+position = Vector2(1400, 1400)
 
 [node name="OrangePortal2" parent="." instance=ExtResource("2_o52yx")]
-position = Vector2(400, 443)
+position = Vector2(400, 550)
 scale = Vector2(2, 2)
 
 [node name="BluePortal" parent="." instance=ExtResource("3_a7cc4")]
-position = Vector2(1825, 501)
+position = Vector2(1800, 550)
 
 [node name="BluePortal2" parent="." instance=ExtResource("3_a7cc4")]
-position = Vector2(150, 1047)
+position = Vector2(150, 1100)
 
 [node name="End Door" parent="." instance=ExtResource("4_5k8cs")]
 position = Vector2(1850, 1363)

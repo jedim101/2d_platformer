@@ -24,11 +24,11 @@ position = Vector2(950, -1150)
 position = Vector2(1000, 2400)
 
 [node name="BluePortal" parent="." instance=ExtResource("2_3iear")]
-position = Vector2(340, 293)
+position = Vector2(350, 400)
 scale = Vector2(2, 2)
 
 [node name="BluePortal2" parent="." instance=ExtResource("2_3iear")]
-position = Vector2(1076, 1101)
+position = Vector2(1050, 1150)
 
 [node name="1x4" parent="." instance=ExtResource("8_10lx5")]
 position = Vector2(1900, 900)

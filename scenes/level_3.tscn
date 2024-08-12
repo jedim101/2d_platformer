@@ -61,10 +61,10 @@ position = Vector2(350, 750)
 position = Vector2(50, 750)
 
 [node name="BluePortal" parent="." instance=ExtResource("4_2e7si")]
-position = Vector2(1750, 1346)
+position = Vector2(1750, 1400)
 
 [node name="BluePortal2" parent="." instance=ExtResource("4_2e7si")]
-position = Vector2(249, 646)
+position = Vector2(250, 700)
 
 [node name="Player" parent="." instance=ExtResource("3_73hxe")]
 position = Vector2(251, 1400)

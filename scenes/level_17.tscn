@@ -214,13 +214,13 @@ position = Vector2(400, 675)
 position = Vector2(350, 625)
 
 [node name="OrangePortal" parent="." instance=ExtResource("4_1e3ql")]
-position = Vector2(752, 1146)
+position = Vector2(750, 1200)
 
 [node name="OrangePortal2" parent="." instance=ExtResource("4_1e3ql")]
-position = Vector2(196, 247)
+position = Vector2(200, 300)
 
 [node name="BluePortal" parent="." instance=ExtResource("6_6g75a")]
-position = Vector2(700, 347)
+position = Vector2(700, 400)
 
 [node name="1x28" parent="." instance=ExtResource("2_e2py4")]
 position = Vector2(1250, 1050)
@@ -238,13 +238,13 @@ position = Vector2(1500, 475)
 position = Vector2(1450, 525)
 
 [node name="BluePortal2" parent="." instance=ExtResource("6_6g75a")]
-position = Vector2(1250, 946)
+position = Vector2(1250, 1000)
 
 [node name="GreenPortal" parent="." instance=ExtResource("7_5dgok")]
-position = Vector2(1850, 1146)
+position = Vector2(1850, 1200)
 
 [node name="GreenPortal2" parent="." instance=ExtResource("7_5dgok")]
-position = Vector2(1000, 347)
+position = Vector2(1000, 400)
 
 [node name="Box" parent="." instance=ExtResource("5_vaoyo")]
 position = Vector2(600, 1350)

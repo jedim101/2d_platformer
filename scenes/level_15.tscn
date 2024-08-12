@@ -25,16 +25,16 @@ position = Vector2(3150, 750)
 position = Vector2(950, -1150)
 
 [node name="OrangePortal" parent="." instance=ExtResource("2_4ptne")]
-position = Vector2(1750, 1347)
+position = Vector2(1750, 1400)
 
 [node name="OrangePortal2" parent="." instance=ExtResource("2_4ptne")]
-position = Vector2(250, 396)
+position = Vector2(250, 450)
 
 [node name="BluePortal" parent="." instance=ExtResource("3_q6iyr")]
-position = Vector2(1523, 397)
+position = Vector2(1500, 450)
 
 [node name="BluePortal2" parent="." instance=ExtResource("3_q6iyr")]
-position = Vector2(250, 1347)
+position = Vector2(250, 1400)
 
 [node name="End Door" parent="." instance=ExtResource("2_84826")]
 position = Vector2(1800, 675)

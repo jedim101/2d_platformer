@@ -42,7 +42,7 @@ _data = {
 }
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4hl82"]
-radius = 29.0
+radius = 27.0
 height = 100.0
 
 [node name="OrangePortal" type="Area2D" groups=["portal"]]
@@ -50,8 +50,8 @@ script = ExtResource("1_1mxgr")
 metadata/value = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-1.19209e-07, -1)
-scale = Vector2(0.38075, 0.364917)
+position = Vector2(2.08165e-12, -54.5)
+scale = Vector2(0.363, 0.363)
 texture = ExtResource("2_odfpf")
 hframes = 3
 
@@ -62,7 +62,7 @@ libraries = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2(0, 4)
+position = Vector2(0, -50)
 shape = SubResource("CapsuleShape2D_4hl82")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

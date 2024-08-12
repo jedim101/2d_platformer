@@ -27,24 +27,24 @@ position = Vector2(3150, 750)
 position = Vector2(950, -1150)
 
 [node name="OrangePortal" parent="." instance=ExtResource("5_lxb4x")]
-position = Vector2(650, 1347)
+position = Vector2(650, 1400)
 
 [node name="OrangePortal2" parent="." instance=ExtResource("5_lxb4x")]
-position = Vector2(300, 647)
+position = Vector2(300, 700)
 
 [node name="BluePortal" parent="." instance=ExtResource("6_1fnt2")]
-position = Vector2(1181, 596)
+position = Vector2(1150, 650)
 
 [node name="BluePortal2" parent="." instance=ExtResource("6_1fnt2")]
-position = Vector2(250, 1073)
+position = Vector2(250, 1100)
 scale = Vector2(0.5, 0.5)
 
 [node name="GreenPortal" parent="." instance=ExtResource("7_nb7ra")]
-position = Vector2(1350, 1293)
+position = Vector2(1350, 1400)
 scale = Vector2(2, 2)
 
 [node name="GreenPortal2" parent="." instance=ExtResource("7_nb7ra")]
-position = Vector2(200, 346)
+position = Vector2(200, 400)
 
 [node name="1x12" parent="." instance=ExtResource("2_pdjqc")]
 position = Vector2(250, 450)
