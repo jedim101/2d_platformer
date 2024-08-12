@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://doiha4k2akscd"]
 
 [ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_hx7yb"]
-[ext_resource type="PackedScene" uid="uid://be5smo81o07df" path="res://scenes/portal.tscn" id="2_kifw5"]
 [ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://scenes/end_door.tscn" id="3_i0xrw"]
 [ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="4_vj56d"]
+[ext_resource type="PackedScene" uid="uid://dg6kl5bnwvmoo" path="res://scenes/blue_portal.tscn" id="5_s63t1"]
 [ext_resource type="PackedScene" uid="uid://begaypcqs5dk6" path="res://scenes/_5x_1.tscn" id="6_y73bc"]
 [ext_resource type="PackedScene" uid="uid://dwn64unibblgj" path="res://scenes/pause_menu.tscn" id="7_lnvin"]
 [ext_resource type="PackedScene" uid="uid://6k3lpo2we22s" path="res://scenes/1x_3.tscn" id="7_verno"]
@@ -47,10 +47,10 @@ position = Vector2(1550, 925)
 [node name="_5x3" parent="." instance=ExtResource("6_y73bc")]
 position = Vector2(1450, 925)
 
-[node name="Portal" parent="." instance=ExtResource("2_kifw5")]
+[node name="BluePortal" parent="." instance=ExtResource("5_s63t1")]
 position = Vector2(1500, 1047)
 
-[node name="Portal2" parent="." instance=ExtResource("2_kifw5")]
+[node name="BluePortal2" parent="." instance=ExtResource("5_s63t1")]
 position = Vector2(250, 793)
 scale = Vector2(2, 2)
 

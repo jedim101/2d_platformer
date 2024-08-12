@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://biu3d4ypf7ow"]
 
-[ext_resource type="PackedScene" uid="uid://be5smo81o07df" path="res://scenes/portal.tscn" id="1_myqv5"]
+[ext_resource type="PackedScene" uid="uid://dg6kl5bnwvmoo" path="res://scenes/blue_portal.tscn" id="1_vy5x1"]
 [ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="2_gnw3u"]
 [ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://scenes/end_door.tscn" id="3_mpwae"]
 [ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="4_vxvjy"]
@@ -12,11 +12,11 @@
 
 [node name="Level 14" type="Node2D"]
 
-[node name="Portal2" parent="." instance=ExtResource("1_myqv5")]
+[node name="BluePortal" parent="." instance=ExtResource("1_vy5x1")]
 position = Vector2(198, 1078)
 scale = Vector2(0.5, 0.5)
 
-[node name="Portal" parent="." instance=ExtResource("1_myqv5")]
+[node name="BluePortal2" parent="." instance=ExtResource("1_vy5x1")]
 position = Vector2(1750, 1047)
 
 [node name="End Door" parent="." instance=ExtResource("3_mpwae")]

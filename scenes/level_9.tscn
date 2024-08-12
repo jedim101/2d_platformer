@@ -3,8 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://begaypcqs5dk6" path="res://scenes/_5x_1.tscn" id="1_gjtf0"]
 [ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="2_0woc1"]
 [ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://scenes/end_door.tscn" id="3_3l6xj"]
+[ext_resource type="PackedScene" uid="uid://dg6kl5bnwvmoo" path="res://scenes/blue_portal.tscn" id="3_kcnh8"]
 [ext_resource type="PackedScene" uid="uid://6k3lpo2we22s" path="res://scenes/1x_3.tscn" id="4_3f68i"]
-[ext_resource type="PackedScene" uid="uid://be5smo81o07df" path="res://scenes/portal.tscn" id="5_64qd0"]
 [ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="6_m42yf"]
 [ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="7_nvgid"]
 [ext_resource type="PackedScene" uid="uid://c2e70275jdk73" path="res://scenes/1x_1.tscn" id="7_xkm5h"]
@@ -27,11 +27,11 @@ position = Vector2(950, -1150)
 [node name="End Door" parent="." instance=ExtResource("3_3l6xj")]
 position = Vector2(175, 674)
 
-[node name="Portal" parent="." instance=ExtResource("5_64qd0")]
+[node name="BluePortal2" parent="." instance=ExtResource("3_kcnh8")]
 position = Vector2(1524, 848)
 scale = Vector2(2, 2)
 
-[node name="Portal2" parent="." instance=ExtResource("5_64qd0")]
+[node name="BluePortal" parent="." instance=ExtResource("3_kcnh8")]
 position = Vector2(950, 1097)
 
 [node name="Box" parent="." instance=ExtResource("6_m42yf")]

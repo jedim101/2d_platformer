@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://vn7al050m1pl"]
 
+[ext_resource type="PackedScene" uid="uid://dg6kl5bnwvmoo" path="res://scenes/blue_portal.tscn" id="2_3iear"]
 [ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="2_wfmy2"]
 [ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://scenes/end_door.tscn" id="3_osjyl"]
-[ext_resource type="PackedScene" uid="uid://be5smo81o07df" path="res://scenes/portal.tscn" id="4_h5su4"]
 [ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="5_xw0k7"]
 [ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="6_3cudd"]
 [ext_resource type="PackedScene" uid="uid://6k3lpo2we22s" path="res://scenes/1x_3.tscn" id="7_wah5r"]
@@ -23,9 +23,12 @@ position = Vector2(950, -1150)
 [node name="Big Block" parent="." instance=ExtResource("2_wfmy2")]
 position = Vector2(1000, 2400)
 
-[node name="Portal2" parent="." instance=ExtResource("4_h5su4")]
+[node name="BluePortal" parent="." instance=ExtResource("2_3iear")]
 position = Vector2(340, 293)
 scale = Vector2(2, 2)
+
+[node name="BluePortal2" parent="." instance=ExtResource("2_3iear")]
+position = Vector2(1076, 1101)
 
 [node name="1x4" parent="." instance=ExtResource("8_10lx5")]
 position = Vector2(1900, 900)
@@ -56,9 +59,6 @@ position = Vector2(1800, 1100)
 
 [node name="End Door" parent="." instance=ExtResource("3_osjyl")]
 position = Vector2(1826, 775)
-
-[node name="Portal" parent="." instance=ExtResource("4_h5su4")]
-position = Vector2(1076, 1101)
 
 [node name="Box2" parent="." instance=ExtResource("5_xw0k7")]
 position = Vector2(439, 1100)
