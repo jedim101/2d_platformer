@@ -30,9 +30,13 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 
-	if (velocity.x != 0 and not $Sprite2D/FrameAnimator.is_playing()):
+	if velocity.x != 0 and not $Sprite2D/FrameAnimator.is_playing():
+		if velocity.x < 0:
+			$Sprite2D.flip_h = true
+		else:
+			$Sprite2D.flip_h = false
 		$Sprite2D/FrameAnimator.play("walking")
-	elif (velocity.x == 0): 
+	elif velocity.x == 0: 
 		$Sprite2D/FrameAnimator.stop()
 
 	move_and_slide()
