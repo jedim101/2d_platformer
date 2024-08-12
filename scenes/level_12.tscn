@@ -12,65 +12,68 @@
 
 [node name="Level 12" type="Node2D"]
 
+[node name="Big Block" parent="." instance=ExtResource("3_k0npt")]
+position = Vector2(950, 2650)
+
+[node name="Big Block2" parent="." instance=ExtResource("3_k0npt")]
+position = Vector2(-1150, 750)
+
+[node name="Big Block3" parent="." instance=ExtResource("3_k0npt")]
+position = Vector2(3150, 750)
+
+[node name="Big Block4" parent="." instance=ExtResource("3_k0npt")]
+position = Vector2(950, -1150)
+
 [node name="Portal2" parent="." instance=ExtResource("1_po7bp")]
-position = Vector2(464, 1298)
+position = Vector2(500, 1293)
 scale = Vector2(2, 2)
 
 [node name="1x9" parent="." instance=ExtResource("2_x4wd4")]
-position = Vector2(142, 904)
+position = Vector2(150, 850)
 
 [node name="1x10" parent="." instance=ExtResource("2_x4wd4")]
-position = Vector2(242, 904)
-
-[node name="Big Block" parent="." instance=ExtResource("3_k0npt")]
-position = Vector2(1025, 2655)
-
-[node name="Big Block2" parent="." instance=ExtResource("3_k0npt")]
-position = Vector2(-1079, 705)
-
-[node name="Big Block3" parent="." instance=ExtResource("3_k0npt")]
-position = Vector2(3043, 805)
+position = Vector2(250, 851)
 
 [node name="Big Block5" parent="." instance=ExtResource("3_k0npt")]
-position = Vector2(2805, 1854)
+position = Vector2(2850, 1850)
 
 [node name="Big Block6" parent="." instance=ExtResource("3_k0npt")]
-position = Vector2(2805, -946)
-
-[node name="Big Block4" parent="." instance=ExtResource("3_k0npt")]
-position = Vector2(937, -1145)
+position = Vector2(2850, -950)
 
 [node name="End Door" parent="." instance=ExtResource("4_pmcrs")]
-position = Vector2(1756, 454)
+position = Vector2(1750, 450)
 scale = Vector2(2, 2)
 
 [node name="Portal" parent="." instance=ExtResource("1_po7bp")]
-position = Vector2(606, 739)
+position = Vector2(646, 685)
 scale = Vector2(4, 4)
 
 [node name="Box2" parent="." instance=ExtResource("5_21yv5")]
 position = Vector2(892, 1354)
 
 [node name="Box6" parent="." instance=ExtResource("5_21yv5")]
-position = Vector2(242, 1355)
+position = Vector2(300, 1350)
 
 [node name="Box3" parent="." instance=ExtResource("5_21yv5")]
-position = Vector2(646, 1355)
+position = Vector2(717, 1350)
 
 [node name="Player" parent="." instance=ExtResource("6_rc2ww")]
-position = Vector2(762, 1404)
+position = Vector2(802, 1395)
 
 [node name="1x17" parent="." instance=ExtResource("7_q67wq")]
-position = Vector2(232, 1004)
+position = Vector2(250, 950)
 
 [node name="1x18" parent="." instance=ExtResource("7_q67wq")]
-position = Vector2(513, 1004)
+position = Vector2(550, 950)
 
 [node name="1x19" parent="." instance=ExtResource("7_q67wq")]
-position = Vector2(794, 1004)
+position = Vector2(750, 950)
 
 [node name="_5x1" parent="." instance=ExtResource("8_ftrap")]
-position = Vector2(142, 1380)
+position = Vector2(100, 1376)
+
+[node name="_5x2" parent="." instance=ExtResource("8_ftrap")]
+position = Vector2(200, 1376)
 
 [node name="PauseMenu" parent="." instance=ExtResource("9_oe8qv")]
 visible = false
