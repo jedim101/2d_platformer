@@ -107,9 +107,6 @@ position = Vector2(850, 350)
 [node name="1x22" parent="." instance=ExtResource("2_e2py4")]
 position = Vector2(850, 249)
 
-[node name="1x25" parent="." instance=ExtResource("2_e2py4")]
-position = Vector2(850, 250)
-
 [node name="1x26" parent="." instance=ExtResource("2_e2py4")]
 position = Vector2(850, 150)
 
