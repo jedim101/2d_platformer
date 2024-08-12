@@ -25,48 +25,49 @@ vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Big Block" parent="." instance=ExtResource("1_f3fof")]
-position = Vector2(1075, 2605)
+position = Vector2(950, 2650)
 
 [node name="Big Block2" parent="." instance=ExtResource("1_f3fof")]
-position = Vector2(-1079, 705)
+position = Vector2(-1150, 750)
 
 [node name="Big Block3" parent="." instance=ExtResource("1_f3fof")]
-position = Vector2(3043, 805)
+position = Vector2(3150, 750)
 
 [node name="Big Block4" parent="." instance=ExtResource("1_f3fof")]
-position = Vector2(937, -1145)
+position = Vector2(950, -1150)
 
 [node name="End Door" parent="." instance=ExtResource("2_nwkus")]
-position = Vector2(1731, 580)
+position = Vector2(1752, 625)
 
 [node name="1x3" parent="." instance=ExtResource("4_u7wyw")]
-position = Vector2(1732, 705)
+position = Vector2(1850, 750)
 
 [node name="1x4" parent="." instance=ExtResource("4_u7wyw")]
-position = Vector2(1452, 705)
+position = Vector2(1550, 750)
 
 [node name="1x5" parent="." instance=ExtResource("4_u7wyw")]
-position = Vector2(1171, 705)
+position = Vector2(1250, 750)
 
 [node name="1x6" parent="." instance=ExtResource("4_u7wyw")]
-position = Vector2(890, 705)
+position = Vector2(950, 750)
 
 [node name="1x7" parent="." instance=ExtResource("4_u7wyw")]
-position = Vector2(610, 705)
+position = Vector2(650, 750)
 
 [node name="1x8" parent="." instance=ExtResource("4_u7wyw")]
-position = Vector2(329, 705)
+position = Vector2(350, 750)
 
 [node name="1x9" parent="." instance=ExtResource("4_u7wyw")]
-position = Vector2(48, 705)
+position = Vector2(50, 750)
 
 [node name="Portal" parent="." instance=ExtResource("4_evqi6")]
-position = Vector2(1732, 1301)
+position = Vector2(1750, 1346)
 
 [node name="Portal2" parent="." instance=ExtResource("4_evqi6")]
-position = Vector2(235, 601)
+position = Vector2(249, 646)
 
 [node name="Player" parent="." instance=ExtResource("3_73hxe")]
-position = Vector2(302, 1355)
+position = Vector2(251, 1400)
 
 [node name="PauseMenu" parent="." instance=ExtResource("6_d1f1o")]
+visible = false

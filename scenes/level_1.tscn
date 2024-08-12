@@ -11,24 +11,6 @@ font_color = Color(0.743482, 0.743482, 0.743482, 1)
 
 [node name="Level 1" type="Node2D"]
 
-[node name="End Door" parent="." instance=ExtResource("3_t3saw")]
-position = Vector2(1686, 980)
-
-[node name="Player" parent="." instance=ExtResource("2_16j8g")]
-position = Vector2(304, 1055)
-
-[node name="Big Block" parent="." instance=ExtResource("1_pqpqh")]
-position = Vector2(1076, 2305)
-
-[node name="Big Block2" parent="." instance=ExtResource("1_pqpqh")]
-position = Vector2(-1079, 705)
-
-[node name="Big Block3" parent="." instance=ExtResource("1_pqpqh")]
-position = Vector2(3043, 805)
-
-[node name="Big Block4" parent="." instance=ExtResource("1_pqpqh")]
-position = Vector2(937, -1145)
-
 [node name="Label" type="Label" parent="."]
 offset_left = 99.0
 offset_top = 105.0
@@ -38,6 +20,24 @@ text = "Move to get to the exit door"
 label_settings = SubResource("LabelSettings_8ltlg")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="End Door" parent="." instance=ExtResource("3_t3saw")]
+position = Vector2(1752, 974)
+
+[node name="Player" parent="." instance=ExtResource("2_16j8g")]
+position = Vector2(304, 1050)
+
+[node name="Big Block" parent="." instance=ExtResource("1_pqpqh")]
+position = Vector2(1000, 2300)
+
+[node name="Big Block2" parent="." instance=ExtResource("1_pqpqh")]
+position = Vector2(-1150, 750)
+
+[node name="Big Block3" parent="." instance=ExtResource("1_pqpqh")]
+position = Vector2(3150, 750)
+
+[node name="Big Block4" parent="." instance=ExtResource("1_pqpqh")]
+position = Vector2(950, -1150)
 
 [node name="PauseMenu" parent="." instance=ExtResource("4_6e5ih")]
 visible = false

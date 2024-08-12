@@ -25,33 +25,34 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Big Block" parent="." instance=ExtResource("1_3e3vm")]
-position = Vector2(1076, 2305)
+position = Vector2(950, 2350)
 
 [node name="Big Block2" parent="." instance=ExtResource("1_3e3vm")]
-position = Vector2(-1079, 705)
+position = Vector2(-1150, 750)
 
 [node name="Big Block3" parent="." instance=ExtResource("1_3e3vm")]
-position = Vector2(3043, 805)
+position = Vector2(3150, 750)
 
 [node name="Big Block4" parent="." instance=ExtResource("1_3e3vm")]
-position = Vector2(937, -1145)
+position = Vector2(950, -1150)
 
 [node name="End Door" parent="." instance=ExtResource("2_tx01e")]
-position = Vector2(1734, 780)
+position = Vector2(1750, 825)
 
 [node name="Player" parent="." instance=ExtResource("3_ddrat")]
-position = Vector2(304, 1055)
+position = Vector2(304, 1100)
 
 [node name="1x3" parent="." instance=ExtResource("4_j7bpe")]
-position = Vector2(1733, 1005)
+position = Vector2(1750, 1050)
 
 [node name="1x4" parent="." instance=ExtResource("4_j7bpe")]
-position = Vector2(1733, 905)
+position = Vector2(1750, 950)
 
 [node name="Box" parent="." instance=ExtResource("5_wmksb")]
-position = Vector2(608, 1005)
+position = Vector2(608, 1050)
 
 [node name="_5x1" parent="." instance=ExtResource("6_1m52v")]
-position = Vector2(95, 1030)
+position = Vector2(100, 1075)
 
 [node name="PauseMenu" parent="." instance=ExtResource("7_aj1cs")]
+visible = false

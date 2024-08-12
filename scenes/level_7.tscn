@@ -10,51 +10,52 @@
 
 [node name="Level 7" type="Node2D"]
 
-[node name="End Door" parent="." instance=ExtResource("3_i0xrw")]
-position = Vector2(1732, 705)
-scale = Vector2(2, 2)
-
 [node name="Big Block" parent="." instance=ExtResource("1_hx7yb")]
-position = Vector2(1076, 2305)
+position = Vector2(950, 2350)
 
 [node name="Big Block2" parent="." instance=ExtResource("1_hx7yb")]
-position = Vector2(-1079, 705)
+position = Vector2(-1150, 750)
 
 [node name="Big Block3" parent="." instance=ExtResource("1_hx7yb")]
-position = Vector2(3043, 805)
+position = Vector2(3150, 750)
 
 [node name="Big Block4" parent="." instance=ExtResource("1_hx7yb")]
-position = Vector2(937, -1145)
+position = Vector2(950, -1150)
+
+[node name="End Door" parent="." instance=ExtResource("3_i0xrw")]
+position = Vector2(1750, 750)
+scale = Vector2(2, 2)
 
 [node name="1x3" parent="." instance=ExtResource("7_verno")]
-position = Vector2(1732, 1005)
+position = Vector2(1750, 1050)
 
 [node name="1x4" parent="." instance=ExtResource("7_verno")]
-position = Vector2(1732, 905)
+position = Vector2(1750, 950)
 
 [node name="1x9" parent="." instance=ExtResource("7_verno")]
-position = Vector2(233, 1005)
+position = Vector2(250, 1050)
 
 [node name="1x10" parent="." instance=ExtResource("7_verno")]
-position = Vector2(233, 905)
+position = Vector2(250, 950)
 
 [node name="_5x1" parent="." instance=ExtResource("6_y73bc")]
-position = Vector2(1588, 930)
+position = Vector2(1600, 975)
 
 [node name="_5x2" parent="." instance=ExtResource("6_y73bc")]
-position = Vector2(1542, 880)
+position = Vector2(1550, 925)
 
 [node name="_5x3" parent="." instance=ExtResource("6_y73bc")]
-position = Vector2(1442, 880)
+position = Vector2(1450, 925)
 
 [node name="Portal" parent="." instance=ExtResource("2_kifw5")]
-position = Vector2(1496, 1001)
+position = Vector2(1500, 1047)
 
 [node name="Portal2" parent="." instance=ExtResource("2_kifw5")]
-position = Vector2(231, 747)
+position = Vector2(250, 793)
 scale = Vector2(2, 2)
 
 [node name="Player" parent="." instance=ExtResource("4_vj56d")]
-position = Vector2(513, 1055)
+position = Vector2(550, 1100)
 
 [node name="PauseMenu" parent="." instance=ExtResource("7_lnvin")]
+visible = false

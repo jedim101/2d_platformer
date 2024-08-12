@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://be5smo81o07df"]
+[gd_scene load_steps=7 format=3 uid="uid://b60edsgtceue1"]
 
-[ext_resource type="Script" path="res://scripts/portal.gd" id="1_l77ji"]
-[ext_resource type="Texture2D" uid="uid://c5ibl5th7r8hv" path="res://assets/blue_portal.png" id="2_8jxub"]
+[ext_resource type="Script" path="res://scripts/portal.gd" id="1_kvjqa"]
+[ext_resource type="Texture2D" uid="uid://bpaw45odb8k8" path="res://assets/green_portal.png" id="2_l50jr"]
 
 [sub_resource type="Animation" id="Animation_u52fo"]
 length = 0.001
@@ -45,13 +45,14 @@ _data = {
 radius = 29.0
 height = 100.0
 
-[node name="Portal" type="Area2D" groups=["portal"]]
-script = ExtResource("1_l77ji")
+[node name="GreenPortal" type="Area2D" groups=["portal"]]
+script = ExtResource("1_kvjqa")
+metadata/value = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-1.19209e-07, -1)
 scale = Vector2(0.38075, 0.364917)
-texture = ExtResource("2_8jxub")
+texture = ExtResource("2_l50jr")
 hframes = 3
 
 [node name="PortalAnimator" type="AnimationPlayer" parent="Sprite2D"]
@@ -60,6 +61,7 @@ libraries = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0, 4)
 shape = SubResource("CapsuleShape2D_4hl82")
 

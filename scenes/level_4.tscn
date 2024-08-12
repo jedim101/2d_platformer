@@ -15,6 +15,45 @@ font_color = Color(0.743482, 0.743482, 0.743482, 1)
 
 [node name="Level 4" type="Node2D"]
 
+[node name="Big Block" parent="." instance=ExtResource("1_42sib")]
+position = Vector2(950, 2650)
+
+[node name="Big Block2" parent="." instance=ExtResource("1_42sib")]
+position = Vector2(-1150, 750)
+
+[node name="Big Block3" parent="." instance=ExtResource("1_42sib")]
+position = Vector2(3150, 750)
+
+[node name="Big Block4" parent="." instance=ExtResource("1_42sib")]
+position = Vector2(950, -1150)
+
+[node name="1x3" parent="." instance=ExtResource("3_mca5j")]
+position = Vector2(1850, 750)
+
+[node name="1x4" parent="." instance=ExtResource("3_mca5j")]
+position = Vector2(1550, 750)
+
+[node name="1x5" parent="." instance=ExtResource("3_mca5j")]
+position = Vector2(1250, 750)
+
+[node name="1x6" parent="." instance=ExtResource("3_mca5j")]
+position = Vector2(950, 750)
+
+[node name="1x7" parent="." instance=ExtResource("3_mca5j")]
+position = Vector2(650, 750)
+
+[node name="1x8" parent="." instance=ExtResource("3_mca5j")]
+position = Vector2(350, 750)
+
+[node name="1x9" parent="." instance=ExtResource("3_mca5j")]
+position = Vector2(50, 750)
+
+[node name="Portal" parent="." instance=ExtResource("4_hhhi5")]
+position = Vector2(1750, 1346)
+
+[node name="Portal2" parent="." instance=ExtResource("4_hhhi5")]
+position = Vector2(300, 646)
+
 [node name="Label" type="Label" parent="."]
 offset_left = 99.0
 offset_top = 757.0
@@ -27,67 +66,29 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Big Block" parent="." instance=ExtResource("1_42sib")]
-position = Vector2(1075, 2605)
-
-[node name="Big Block2" parent="." instance=ExtResource("1_42sib")]
-position = Vector2(-1079, 705)
-
-[node name="Big Block3" parent="." instance=ExtResource("1_42sib")]
-position = Vector2(3043, 805)
-
-[node name="Big Block4" parent="." instance=ExtResource("1_42sib")]
-position = Vector2(937, -1145)
-
 [node name="End Door" parent="." instance=ExtResource("2_1tnhv")]
-position = Vector2(1734, 379)
-
-[node name="1x3" parent="." instance=ExtResource("3_mca5j")]
-position = Vector2(1732, 705)
+position = Vector2(1752, 425)
 
 [node name="1x10" parent="." instance=ExtResource("3_mca5j")]
-position = Vector2(1732, 605)
+position = Vector2(1750, 650)
 
 [node name="1x11" parent="." instance=ExtResource("3_mca5j")]
-position = Vector2(1732, 505)
-
-[node name="1x4" parent="." instance=ExtResource("3_mca5j")]
-position = Vector2(1452, 705)
-
-[node name="1x5" parent="." instance=ExtResource("3_mca5j")]
-position = Vector2(1171, 705)
-
-[node name="1x6" parent="." instance=ExtResource("3_mca5j")]
-position = Vector2(890, 705)
-
-[node name="1x7" parent="." instance=ExtResource("3_mca5j")]
-position = Vector2(610, 705)
-
-[node name="1x8" parent="." instance=ExtResource("3_mca5j")]
-position = Vector2(329, 705)
-
-[node name="1x9" parent="." instance=ExtResource("3_mca5j")]
-position = Vector2(48, 705)
-
-[node name="Portal" parent="." instance=ExtResource("4_hhhi5")]
-position = Vector2(1637, 1301)
-
-[node name="Portal2" parent="." instance=ExtResource("4_hhhi5")]
-position = Vector2(326, 601)
+position = Vector2(1750, 550)
 
 [node name="Box" parent="." instance=ExtResource("5_8o6nb")]
-position = Vector2(797, 1305)
+position = Vector2(798, 1350)
 
 [node name="Player" parent="." instance=ExtResource("6_pcp3v")]
-position = Vector2(302, 1355)
+position = Vector2(300, 1400)
 
 [node name="_5x1" parent="." instance=ExtResource("7_finbh")]
-position = Vector2(95, 630)
+position = Vector2(100, 675)
 
 [node name="_5x2" parent="." instance=ExtResource("7_finbh")]
-position = Vector2(95, 1330)
+position = Vector2(100, 1375)
 
 [node name="_5x3" parent="." instance=ExtResource("7_finbh")]
-position = Vector2(1869, 1330)
+position = Vector2(1900, 1375)
 
 [node name="PauseMenu" parent="." instance=ExtResource("8_t0opa")]
+visible = false
