@@ -82,19 +82,19 @@ position = Vector2(952, 350)
 position = Vector2(1450, 950)
 
 [node name="1x49" parent="." instance=ExtResource("5_s73oo")]
-position = Vector2(600, 1100)
+position = Vector2(700, 1100)
 
 [node name="1x51" parent="." instance=ExtResource("5_s73oo")]
-position = Vector2(300, 1100)
+position = Vector2(400, 1100)
+
+[node name="1x56" parent="." instance=ExtResource("5_s73oo")]
+position = Vector2(100, 1100)
 
 [node name="1x50" parent="." instance=ExtResource("5_s73oo")]
-position = Vector2(900, 1100)
+position = Vector2(1000, 1100)
 
 [node name="1x6" parent="." instance=ExtResource("6_kjcs8")]
 position = Vector2(754, 650)
-
-[node name="1x9" parent="." instance=ExtResource("6_kjcs8")]
-position = Vector2(100, 1100)
 
 [node name="1x13" parent="." instance=ExtResource("6_kjcs8")]
 position = Vector2(100, 1000)

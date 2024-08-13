@@ -1,9 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://c2gkrpu4lv60f"]
+[gd_scene load_steps=14 format=3 uid="uid://c2gkrpu4lv60f"]
 
 [ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_nt105"]
 [ext_resource type="PackedScene" uid="uid://dsqqg6v1wdwtq" path="res://scenes/orange_portal.tscn" id="2_mouyi"]
 [ext_resource type="PackedScene" uid="uid://dg6kl5bnwvmoo" path="res://scenes/blue_portal.tscn" id="3_y68pe"]
+[ext_resource type="PackedScene" uid="uid://c0caskoxvfetl" path="res://scenes/green_floating_portal.tscn" id="4_8omsu"]
 [ext_resource type="PackedScene" uid="uid://b60edsgtceue1" path="res://scenes/green_portal.tscn" id="4_jgrdm"]
+[ext_resource type="PackedScene" uid="uid://pkckaxf2ik3h" path="res://scenes/blue_floating_portal.tscn" id="4_tx2nl"]
 [ext_resource type="PackedScene" uid="uid://6k3lpo2we22s" path="res://scenes/1x_3.tscn" id="5_5a6u6"]
 [ext_resource type="PackedScene" uid="uid://c2e70275jdk73" path="res://scenes/1x_1.tscn" id="6_5svvy"]
 [ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="7_xksnj"]
@@ -24,7 +26,7 @@ position = Vector2(-1150, 750)
 position = Vector2(3150, 750)
 
 [node name="Big Block4" parent="." instance=ExtResource("1_nt105")]
-position = Vector2(950, -1150)
+position = Vector2(1650, -1150)
 
 [node name="OrangePortal" parent="." instance=ExtResource("2_mouyi")]
 position = Vector2(1750, 800)
@@ -33,14 +35,14 @@ scale = Vector2(2, 2)
 [node name="OrangePortal2" parent="." instance=ExtResource("2_mouyi")]
 position = Vector2(1200, 550)
 
-[node name="BluePortal" parent="." instance=ExtResource("3_y68pe")]
-position = Vector2(250, 300)
-
 [node name="BluePortal2" parent="." instance=ExtResource("3_y68pe")]
-position = Vector2(200, 1300)
+position = Vector2(200, 1350)
 
-[node name="GreenPortal" parent="." instance=ExtResource("4_jgrdm")]
-position = Vector2(950, 1050)
+[node name="BlueFloatingPortal" parent="." instance=ExtResource("4_tx2nl")]
+position = Vector2(300, 110)
+
+[node name="GreenFloatingPortal" parent="." instance=ExtResource("4_8omsu")]
+position = Vector2(950, 975)
 
 [node name="GreenPortal2" parent="." instance=ExtResource("4_jgrdm")]
 position = Vector2(750, 750)
@@ -48,11 +50,8 @@ position = Vector2(750, 750)
 [node name="1x15" parent="." instance=ExtResource("5_5a6u6")]
 position = Vector2(1750, 850)
 
-[node name="1x17" parent="." instance=ExtResource("5_5a6u6")]
-position = Vector2(250, 350)
-
 [node name="1x18" parent="." instance=ExtResource("5_5a6u6")]
-position = Vector2(400, 600)
+position = Vector2(400, 700)
 
 [node name="1x19" parent="." instance=ExtResource("5_5a6u6")]
 position = Vector2(700, 800)
@@ -63,17 +62,8 @@ position = Vector2(1000, 800)
 [node name="1x21" parent="." instance=ExtResource("5_5a6u6")]
 position = Vector2(1200, 800)
 
-[node name="1x22" parent="." instance=ExtResource("5_5a6u6")]
-position = Vector2(700, 1100)
-
-[node name="1x23" parent="." instance=ExtResource("5_5a6u6")]
-position = Vector2(1000, 1100)
-
-[node name="1x16" parent="." instance=ExtResource("5_5a6u6")]
-position = Vector2(250, 1350)
-
 [node name="Box4" parent="." instance=ExtResource("7_xksnj")]
-position = Vector2(300, 500)
+position = Vector2(300, 600)
 
 [node name="End Door" parent="." instance=ExtResource("8_erjag")]
 position = Vector2(1800, 1400)
@@ -94,11 +84,8 @@ position = Vector2(1550, 850)
 [node name="1x53" parent="." instance=ExtResource("6_5svvy")]
 position = Vector2(1650, 1350)
 
-[node name="1x48" parent="." instance=ExtResource("6_5svvy")]
-position = Vector2(600, 700)
-
 [node name="1x49" parent="." instance=ExtResource("6_5svvy")]
-position = Vector2(600, 600)
+position = Vector2(600, 700)
 
 [node name="1x51" parent="." instance=ExtResource("6_5svvy")]
 position = Vector2(1200, 700)
@@ -107,13 +94,34 @@ position = Vector2(1200, 700)
 position = Vector2(1200, 600)
 
 [node name="1x50" parent="." instance=ExtResource("6_5svvy")]
-position = Vector2(600, 500)
+position = Vector2(600, 600)
 
-[node name="_5x7" parent="." instance=ExtResource("10_oksqw")]
-position = Vector2(100, 275)
+[node name="1x56" parent="." instance=ExtResource("6_5svvy")]
+position = Vector2(150, 50)
+
+[node name="_5x12" parent="." instance=ExtResource("10_oksqw")]
+position = Vector2(100, 475)
+
+[node name="_5x13" parent="." instance=ExtResource("10_oksqw")]
+position = Vector2(200, 475)
+
+[node name="_5x14" parent="." instance=ExtResource("10_oksqw")]
+position = Vector2(300, 475)
+
+[node name="_5x15" parent="." instance=ExtResource("10_oksqw")]
+position = Vector2(400, 475)
 
 [node name="_5x8" parent="." instance=ExtResource("10_oksqw")]
-position = Vector2(550, 525)
+position = Vector2(550, 625)
+
+[node name="_5x9" parent="." instance=ExtResource("10_oksqw")]
+position = Vector2(100, 1375)
+
+[node name="_5x10" parent="." instance=ExtResource("10_oksqw")]
+position = Vector2(200, 1375)
+
+[node name="_5x11" parent="." instance=ExtResource("10_oksqw")]
+position = Vector2(300, 1375)
 
 [node name="PauseMenu" parent="." instance=ExtResource("11_0hltx")]
 visible = false

@@ -137,6 +137,45 @@ position = Vector2(800, 1600)
 [node name="1x17" parent="." instance=ExtResource("9_uff4i")]
 position = Vector2(800, 1100)
 
+[node name="1x41" parent="." instance=ExtResource("9_uff4i")]
+position = Vector2(1300, 0)
+
+[node name="1x53" parent="." instance=ExtResource("9_uff4i")]
+position = Vector2(1300, -101)
+
+[node name="1x50" parent="." instance=ExtResource("9_uff4i")]
+position = Vector2(1300, 100)
+
+[node name="1x51" parent="." instance=ExtResource("9_uff4i")]
+position = Vector2(1300, 200)
+
+[node name="1x42" parent="." instance=ExtResource("9_uff4i")]
+position = Vector2(1300, 1400)
+
+[node name="1x47" parent="." instance=ExtResource("9_uff4i")]
+position = Vector2(1300, 1500)
+
+[node name="1x48" parent="." instance=ExtResource("9_uff4i")]
+position = Vector2(1300, 1300)
+
+[node name="1x49" parent="." instance=ExtResource("9_uff4i")]
+position = Vector2(1300, 1500)
+
+[node name="1x52" parent="." instance=ExtResource("9_uff4i")]
+position = Vector2(1300, 1600)
+
+[node name="1x43" parent="." instance=ExtResource("9_uff4i")]
+position = Vector2(1300, 1200)
+
+[node name="1x44" parent="." instance=ExtResource("9_uff4i")]
+position = Vector2(100, 600)
+
+[node name="1x45" parent="." instance=ExtResource("9_uff4i")]
+position = Vector2(100, 700)
+
+[node name="1x46" parent="." instance=ExtResource("9_uff4i")]
+position = Vector2(100, 500)
+
 [node name="1x30" parent="." instance=ExtResource("9_uff4i")]
 position = Vector2(1350, 350)
 

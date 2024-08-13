@@ -24,7 +24,7 @@ position = Vector2(-1150, 750)
 position = Vector2(3150, 750)
 
 [node name="Big Block5" parent="." instance=ExtResource("1_efuvs")]
-position = Vector2(2850, 2350)
+position = Vector2(2900, 2300)
 
 [node name="Big Block4" parent="." instance=ExtResource("1_efuvs")]
 position = Vector2(950, -1150)
@@ -148,9 +148,6 @@ position = Vector2(450, 825)
 
 [node name="_5x12" parent="." instance=ExtResource("8_txv1r")]
 position = Vector2(1600, 1375)
-
-[node name="_5x13" parent="." instance=ExtResource("8_txv1r")]
-position = Vector2(1500, 1375)
 
 [node name="OrangePortal" parent="." instance=ExtResource("5_j66rb")]
 position = Vector2(150, 400)
