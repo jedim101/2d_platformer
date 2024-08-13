@@ -44,6 +44,10 @@ position = Vector2(1750, 750)
 [node name="_5x1" parent="." instance=ExtResource("6_jgt2u")]
 position = Vector2(1450, 1025)
 
+[node name="_5x7" parent="." instance=ExtResource("6_jgt2u")]
+position = Vector2(125, 1087.5)
+scale = Vector2(0.5, 0.5)
+
 [node name="_5x4" parent="." instance=ExtResource("6_jgt2u")]
 position = Vector2(1300, 875)
 
