@@ -95,6 +95,9 @@ position = Vector2(1050, 950)
 position = Vector2(1750, 550)
 
 [node name="1x72" parent="." instance=ExtResource("2_drqsr")]
+position = Vector2(1550, 950)
+
+[node name="1x75" parent="." instance=ExtResource("2_drqsr")]
 position = Vector2(1650, 1050)
 
 [node name="1x73" parent="." instance=ExtResource("2_drqsr")]
@@ -143,7 +146,7 @@ position = Vector2(350, 925)
 position = Vector2(400, 975)
 
 [node name="_5x2" parent="." instance=ExtResource("4_ktgec")]
-position = Vector2(1400, 975)
+position = Vector2(1400, 875)
 
 [node name="_5x4" parent="." instance=ExtResource("4_ktgec")]
 position = Vector2(1300, 1275)
@@ -188,10 +191,13 @@ position = Vector2(1350, 750)
 position = Vector2(1350, 650)
 
 [node name="1x15" parent="." instance=ExtResource("3_v2v5u")]
+position = Vector2(1750, 850)
+
+[node name="1x21" parent="." instance=ExtResource("3_v2v5u")]
 position = Vector2(1750, 950)
 
 [node name="1x16" parent="." instance=ExtResource("3_v2v5u")]
-position = Vector2(1750, 850)
+position = Vector2(1750, 750)
 
 [node name="1x27" parent="." instance=ExtResource("3_v2v5u")]
 position = Vector2(1350, 850)
