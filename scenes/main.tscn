@@ -1,127 +1,129 @@
-[gd_scene load_steps=3 format=3 uid="uid://xi2r5qurslhq"]
+[gd_scene load_steps=14 format=3 uid="uid://xi2r5qurslhq"]
 
+[ext_resource type="PackedScene" uid="uid://6k3lpo2we22s" path="res://scenes/1x_3.tscn" id="1_cra1h"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_geyk6"]
 [ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_lljn7"]
-[ext_resource type="PackedScene" uid="uid://drf8poj4ucu1r" path="res://scenes/level_selector.tscn" id="3_2st6j"]
+[ext_resource type="PackedScene" uid="uid://pkckaxf2ik3h" path="res://scenes/blue_floating_portal.tscn" id="1_ypap8"]
+[ext_resource type="PackedScene" uid="uid://dsqqg6v1wdwtq" path="res://scenes/orange_portal.tscn" id="2_jdp78"]
+[ext_resource type="StyleBox" uid="uid://dcpxyoobiwn16" path="res://assets/button.tres" id="2_wlbta"]
+[ext_resource type="StyleBox" uid="uid://bd1085xek35ky" path="res://assets/button_hover.tres" id="3_nwslq"]
+[ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://scenes/end_door.tscn" id="4_1f4t6"]
+[ext_resource type="PackedScene" uid="uid://b60edsgtceue1" path="res://scenes/green_portal.tscn" id="4_f7toc"]
+[ext_resource type="PackedScene" uid="uid://dg6kl5bnwvmoo" path="res://scenes/blue_portal.tscn" id="4_loxbd"]
+[ext_resource type="PackedScene" uid="uid://c0caskoxvfetl" path="res://scenes/green_floating_portal.tscn" id="6_pbm43"]
+[ext_resource type="PackedScene" uid="uid://ds4shqthemipk" path="res://scenes/orange_floating_portal.tscn" id="7_4vp6s"]
+[ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="7_gs76k"]
 
-[node name="Menu" type="Control"]
+[node name="Main" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 155.0
+offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_geyk6")
 
-[node name="Big Block" parent="." instance=ExtResource("1_lljn7")]
-position = Vector2(1171, 1250)
+[node name="1x3" parent="." instance=ExtResource("1_cra1h")]
+position = Vector2(1000, 1250)
 
-[node name="GridContainer" type="GridContainer" parent="."]
+[node name="1x9" parent="." instance=ExtResource("1_cra1h")]
+position = Vector2(250, 850)
+
+[node name="1x4" parent="." instance=ExtResource("1_cra1h")]
+position = Vector2(250, 1250)
+
+[node name="1x5" parent="." instance=ExtResource("1_cra1h")]
+position = Vector2(250, 1350)
+
+[node name="1x6" parent="." instance=ExtResource("1_cra1h")]
+position = Vector2(450, 1250)
+
+[node name="1x8" parent="." instance=ExtResource("1_cra1h")]
+position = Vector2(1750, 450)
+
+[node name="1x7" parent="." instance=ExtResource("1_cra1h")]
+position = Vector2(450, 1350)
+
+[node name="OrangePortal" parent="." instance=ExtResource("2_jdp78")]
+position = Vector2(1700, 1400)
+scale = Vector2(1.5, 1.5)
+
+[node name="BlueFloatingPortal" parent="." instance=ExtResource("1_ypap8")]
+position = Vector2(900, 350)
+scale = Vector2(1.5, 1.5)
+
+[node name="End Door" parent="." instance=ExtResource("4_1f4t6")]
+position = Vector2(1750, 400)
+scale = Vector2(1.5, 1.5)
+
+[node name="BluePortal" parent="." instance=ExtResource("4_loxbd")]
+position = Vector2(250, 801)
+scale = Vector2(1.5, 1.5)
+
+[node name="GreenPortal" parent="." instance=ExtResource("4_f7toc")]
+position = Vector2(350, 1201)
+scale = Vector2(1.5, 1.5)
+
+[node name="GreenFloatingPortal" parent="." instance=ExtResource("6_pbm43")]
+position = Vector2(1782, 900)
+scale = Vector2(1.5, 1.5)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -475.0
-offset_top = -475.0
-offset_right = 475.0
-offset_bottom = 475.0
+offset_left = -600.5
+offset_top = -267.5
+offset_right = 600.5
+offset_bottom = 267.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/h_separation = 50
-theme_override_constants/v_separation = 50
-columns = 6
+theme_override_constants/separation = 50
 
-[node name="LevelSelector" parent="GridContainer" instance=ExtResource("3_2st6j")]
+[node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.501961, 0.0784314, 1)
+theme_override_font_sizes/font_size = 200
+text = "Portal Game"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="LevelSelector2" parent="GridContainer" instance=ExtResource("3_2st6j")]
+[node name="Play" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-text = "2"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = ExtResource("2_wlbta")
+theme_override_styles/hover = ExtResource("3_nwslq")
+theme_override_styles/pressed = ExtResource("3_nwslq")
+text = "Play"
 
-[node name="LevelSelector3" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "3"
+[node name="OrangeFloatingPortal" parent="." instance=ExtResource("7_4vp6s")]
+position = Vector2(661, 701)
+scale = Vector2(1.5, 1.15)
 
-[node name="LevelSelector4" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "4"
+[node name="Big Block" parent="." instance=ExtResource("1_lljn7")]
+position = Vector2(950, 2650)
 
-[node name="LevelSelector5" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "5"
+[node name="Big Block2" parent="." instance=ExtResource("1_lljn7")]
+position = Vector2(-1150, 750)
 
-[node name="LevelSelector6" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "6"
+[node name="Big Block3" parent="." instance=ExtResource("1_lljn7")]
+position = Vector2(3150, 750)
 
-[node name="LevelSelector7" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "7"
+[node name="Big Block4" parent="." instance=ExtResource("1_lljn7")]
+position = Vector2(950, -1150)
 
-[node name="LevelSelector8" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "8"
+[node name="Box" parent="." instance=ExtResource("7_gs76k")]
+position = Vector2(1000, 1150)
 
-[node name="LevelSelector9" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "9"
-
-[node name="LevelSelector10" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "10"
-
-[node name="LevelSelector11" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "11"
-
-[node name="LevelSelector12" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "12"
-
-[node name="LevelSelector13" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "13"
-
-[node name="LevelSelector14" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "14"
-
-[node name="LevelSelector15" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "15"
-
-[node name="LevelSelector16" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "16"
-
-[node name="LevelSelector17" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "17"
-
-[node name="LevelSelector18" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "18"
-
-[node name="LevelSelector19" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "19"
-
-[node name="LevelSelector20" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "20"
-
-[node name="LevelSelector21" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "21"
-
-[node name="LevelSelector22" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "22"
-
-[node name="LevelSelector23" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "23"
-
-[node name="LevelSelector24" parent="GridContainer" instance=ExtResource("3_2st6j")]
-layout_mode = 2
-text = "24"
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
