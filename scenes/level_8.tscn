@@ -1,74 +1,258 @@
-[gd_scene load_steps=9 format=3 uid="uid://con0dtwj3jv37"]
+[gd_scene load_steps=13 format=3 uid="uid://vqa8b5hhtxee"]
 
-[ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_mh1t7"]
-[ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://scenes/end_door.tscn" id="2_lo4rb"]
-[ext_resource type="PackedScene" uid="uid://6k3lpo2we22s" path="res://scenes/1x_3.tscn" id="3_h2mri"]
-[ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="5_7nid8"]
-[ext_resource type="PackedScene" uid="uid://dg6kl5bnwvmoo" path="res://scenes/blue_portal.tscn" id="5_o4g6l"]
-[ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="6_l31do"]
-[ext_resource type="PackedScene" uid="uid://begaypcqs5dk6" path="res://scenes/_5x_1.tscn" id="7_7kejn"]
-[ext_resource type="PackedScene" uid="uid://dwn64unibblgj" path="res://scenes/pause_menu.tscn" id="8_tg8j3"]
+[ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_uckre"]
+[ext_resource type="PackedScene" uid="uid://6k3lpo2we22s" path="res://scenes/1x_3.tscn" id="2_cr1c7"]
+[ext_resource type="PackedScene" uid="uid://c2e70275jdk73" path="res://scenes/1x_1.tscn" id="2_e2py4"]
+[ext_resource type="PackedScene" uid="uid://bl2qxycacwbyd" path="res://scenes/player.tscn" id="2_p7qc5"]
+[ext_resource type="PackedScene" uid="uid://begaypcqs5dk6" path="res://scenes/_5x_1.tscn" id="3_8v37k"]
+[ext_resource type="PackedScene" uid="uid://dwn64unibblgj" path="res://scenes/pause_menu.tscn" id="3_a0ooj"]
+[ext_resource type="PackedScene" uid="uid://dsqqg6v1wdwtq" path="res://scenes/orange_portal.tscn" id="4_1e3ql"]
+[ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="5_vaoyo"]
+[ext_resource type="PackedScene" uid="uid://dg6kl5bnwvmoo" path="res://scenes/blue_portal.tscn" id="6_6g75a"]
+[ext_resource type="PackedScene" uid="uid://b60edsgtceue1" path="res://scenes/green_portal.tscn" id="7_5dgok"]
+[ext_resource type="PackedScene" uid="uid://pkckaxf2ik3h" path="res://scenes/blue_floating_portal.tscn" id="8_43ega"]
+[ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://scenes/end_door.tscn" id="9_oxpva"]
 
 [node name="Level 8" type="Node2D"]
 
-[node name="Big Block" parent="." instance=ExtResource("1_mh1t7")]
-position = Vector2(950, 2450)
+[node name="Big Block" parent="." instance=ExtResource("1_uckre")]
+position = Vector2(950, 2650)
 
-[node name="Big Block2" parent="." instance=ExtResource("1_mh1t7")]
+[node name="Big Block2" parent="." instance=ExtResource("1_uckre")]
 position = Vector2(-1150, 750)
 
-[node name="Big Block3" parent="." instance=ExtResource("1_mh1t7")]
+[node name="Big Block3" parent="." instance=ExtResource("1_uckre")]
 position = Vector2(3150, 750)
 
-[node name="_5x6" parent="." instance=ExtResource("7_7kejn")]
-position = Vector2(1024, 1188)
-scale = Vector2(0.5, 0.5)
+[node name="Big Block4" parent="." instance=ExtResource("1_uckre")]
+position = Vector2(950, -1150)
 
-[node name="End Door" parent="." instance=ExtResource("2_lo4rb")]
-position = Vector2(1750, 1050)
+[node name="1x3" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(250, 1350)
 
-[node name="1x11" parent="." instance=ExtResource("3_h2mri")]
-position = Vector2(1750, 1150)
+[node name="1x12" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(850, 950)
 
-[node name="1x13" parent="." instance=ExtResource("3_h2mri")]
-position = Vector2(250, 1150)
+[node name="1x18" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(1250, 850)
 
-[node name="1x14" parent="." instance=ExtResource("3_h2mri")]
-position = Vector2(549, 1150)
+[node name="1x19" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(1450, 850)
 
-[node name="1x15" parent="." instance=ExtResource("3_h2mri")]
-position = Vector2(849, 1150)
+[node name="1x32" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(750, 450)
 
-[node name="1x12" parent="." instance=ExtResource("3_h2mri")]
-position = Vector2(1700, 1100)
+[node name="1x33" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(950, 450)
 
-[node name="BluePortal" parent="." instance=ExtResource("5_o4g6l")]
-position = Vector2(1100, 1200)
-scale = Vector2(0.5, 0.5)
+[node name="1x34" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(1200, 500)
 
-[node name="BluePortal2" parent="." instance=ExtResource("5_o4g6l")]
-position = Vector2(300, 1100)
+[node name="1x36" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(1300, 300)
 
-[node name="Box" parent="." instance=ExtResource("5_7nid8")]
-position = Vector2(750, 1050)
+[node name="1x37" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(1600, 300)
 
-[node name="Player" parent="." instance=ExtResource("6_l31do")]
-position = Vector2(500, 1100)
+[node name="1x38" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(1900, 300)
 
-[node name="_5x5" parent="." instance=ExtResource("7_7kejn")]
-position = Vector2(900, 1075)
+[node name="1x39" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(1800, 500)
 
-[node name="_5x7" parent="." instance=ExtResource("7_7kejn")]
-position = Vector2(100, 1075)
+[node name="1x42" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(1800, 600)
 
-[node name="_5x4" parent="." instance=ExtResource("7_7kejn")]
-position = Vector2(1900, 1075)
+[node name="1x41" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(1800, 400)
 
-[node name="_5x8" parent="." instance=ExtResource("7_7kejn")]
-position = Vector2(1600, 1175)
+[node name="1x27" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(250, 350)
 
-[node name="Big Block4" parent="." instance=ExtResource("1_mh1t7")]
-position = Vector2(950, -650)
+[node name="1x15" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(550, 650)
 
-[node name="PauseMenu" parent="." instance=ExtResource("8_tg8j3")]
+[node name="1x4" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(250, 1250)
+
+[node name="1x5" parent="." instance=ExtResource("2_cr1c7")]
+position = Vector2(149, 1150)
+
+[node name="1x1" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(950, 850)
+
+[node name="1x9" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(650, 950)
+
+[node name="1x10" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(650, 1050)
+
+[node name="1x11" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(650, 1150)
+
+[node name="1x14" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(450, 1350)
+
+[node name="1x24" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(350, 850)
+
+[node name="1x72" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(450, 850)
+
+[node name="1x23" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(150, 1050)
+
+[node name="1x6" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(749, 750)
+
+[node name="1x16" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(700, 700)
+
+[node name="1x21" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(850, 350)
+
+[node name="1x22" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(850, 249)
+
+[node name="1x26" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(850, 150)
+
+[node name="1x73" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(1150, 950)
+
+[node name="1x74" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(1150, 1050)
+
+[node name="1x75" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(1150, 1150)
+
+[node name="1x81" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(1850, 1250)
+
+[node name="1x82" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(1850, 1350)
+
+[node name="1x90" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(1850, 850)
+
+[node name="1x93" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(1850, 750)
+
+[node name="1x94" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(1850, 650)
+
+[node name="1x92" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(1850, 950)
+
+[node name="1x76" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(1150, 1250)
+
+[node name="1x77" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(1150, 1350)
+
+[node name="1x86" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(1550, 950)
+
+[node name="1x91" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(1612.5, 625)
+scale = Vector2(0.75, 0.75)
+
+[node name="1x87" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(1550, 1050)
+
+[node name="1x88" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(1550, 1250)
+
+[node name="1x89" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(1550, 1350)
+
+[node name="_5x1" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(901, 1375)
+
+[node name="_5x2" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(500, 1375)
+
+[node name="_5x14" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(600, 1376)
+
+[node name="_5x15" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(687, 1376)
+scale = Vector2(0.75, 1)
+
+[node name="_5x13" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(1200, 1375)
+
+[node name="_5x8" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(650, 1225)
+
+[node name="_5x9" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(750, 1225)
+
+[node name="_5x3" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(400, 1275)
+
+[node name="_5x4" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(300, 1175)
+
+[node name="_5x7" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(100, 976)
+
+[node name="_5x5" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(200, 1075)
+
+[node name="_5x6" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(300, 875)
+
+[node name="_5x10" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(150, 724)
+
+[node name="_5x11" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(400, 675)
+
+[node name="_5x12" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(350, 625)
+
+[node name="OrangePortal" parent="." instance=ExtResource("4_1e3ql")]
+position = Vector2(750, 1200)
+
+[node name="OrangePortal2" parent="." instance=ExtResource("4_1e3ql")]
+position = Vector2(200, 300)
+
+[node name="BluePortal" parent="." instance=ExtResource("6_6g75a")]
+position = Vector2(750, 400)
+
+[node name="_5x18" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(1500, 775)
+
+[node name="_5x19" parent="." instance=ExtResource("3_8v37k")]
+position = Vector2(1350, 525)
+
+[node name="GreenPortal" parent="." instance=ExtResource("7_5dgok")]
+position = Vector2(1850, 1200)
+
+[node name="GreenPortal2" parent="." instance=ExtResource("7_5dgok")]
+position = Vector2(1000, 400)
+
+[node name="BlueFloatingPortal" parent="." instance=ExtResource("8_43ega")]
+position = Vector2(1300, 1025)
+
+[node name="Box" parent="." instance=ExtResource("5_vaoyo")]
+position = Vector2(550, 1300)
+
+[node name="Box3" parent="." instance=ExtResource("5_vaoyo")]
+position = Vector2(1600, 750)
+
+[node name="Box4" parent="." instance=ExtResource("5_vaoyo")]
+position = Vector2(1250, 400)
+
+[node name="Box2" parent="." instance=ExtResource("5_vaoyo")]
+position = Vector2(350, 250)
+
+[node name="End Door" parent="." instance=ExtResource("9_oxpva")]
+position = Vector2(1800, 250)
+
+[node name="Player" parent="." instance=ExtResource("2_p7qc5")]
+position = Vector2(949, 800)
+
+[node name="PauseMenu" parent="." instance=ExtResource("3_a0ooj")]
 visible = false
