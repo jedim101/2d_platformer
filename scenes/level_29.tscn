@@ -109,14 +109,8 @@ position = Vector2(650, 750)
 [node name="1x7" parent="." instance=ExtResource("9_svcyt")]
 position = Vector2(650, 650)
 
-[node name="1x14" parent="." instance=ExtResource("9_svcyt")]
-position = Vector2(250, 450)
-
 [node name="1x10" parent="." instance=ExtResource("9_svcyt")]
 position = Vector2(350, 650)
-
-[node name="1x15" parent="." instance=ExtResource("9_svcyt")]
-position = Vector2(250, 650)
 
 [node name="1x8" parent="." instance=ExtResource("9_svcyt")]
 position = Vector2(750, 550)
@@ -188,10 +182,13 @@ position = Vector2(600, 675)
 position = Vector2(400, 675)
 
 [node name="_5x22" parent="." instance=ExtResource("7_g7ioj")]
-position = Vector2(200, 675)
+position = Vector2(300, 675)
+
+[node name="_5x24" parent="." instance=ExtResource("7_g7ioj")]
+position = Vector2(100, 775)
 
 [node name="_5x23" parent="." instance=ExtResource("7_g7ioj")]
-position = Vector2(200, 475)
+position = Vector2(300, 475)
 
 [node name="_5x13" parent="." instance=ExtResource("7_g7ioj")]
 position = Vector2(300, 875)
