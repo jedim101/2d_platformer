@@ -5,3 +5,5 @@ Try to complete the puzzles by using portals, pushing boxes, and changing sizes 
 It can be played at [https://jedim101.itch.io/portal-game](https://jedim101.itch.io/portal-game)
 
 Use `A` & `D` or the left & right arrow keys to move and `space` to jump.
+
+Video walkthroughs & tutorials coming soon!
