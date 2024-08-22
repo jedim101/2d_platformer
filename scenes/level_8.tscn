@@ -90,6 +90,12 @@ position = Vector2(650, 1050)
 [node name="1x11" parent="." instance=ExtResource("2_e2py4")]
 position = Vector2(650, 1150)
 
+[node name="1x13" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(650, 1250)
+
+[node name="1x17" parent="." instance=ExtResource("2_e2py4")]
+position = Vector2(750, 1250)
+
 [node name="1x14" parent="." instance=ExtResource("2_e2py4")]
 position = Vector2(450, 1350)
 
@@ -172,21 +178,8 @@ position = Vector2(901, 1375)
 [node name="_5x2" parent="." instance=ExtResource("3_8v37k")]
 position = Vector2(500, 1375)
 
-[node name="_5x14" parent="." instance=ExtResource("3_8v37k")]
-position = Vector2(600, 1376)
-
-[node name="_5x15" parent="." instance=ExtResource("3_8v37k")]
-position = Vector2(687, 1376)
-scale = Vector2(0.75, 1)
-
 [node name="_5x13" parent="." instance=ExtResource("3_8v37k")]
 position = Vector2(1200, 1375)
-
-[node name="_5x8" parent="." instance=ExtResource("3_8v37k")]
-position = Vector2(650, 1225)
-
-[node name="_5x9" parent="." instance=ExtResource("3_8v37k")]
-position = Vector2(750, 1225)
 
 [node name="_5x3" parent="." instance=ExtResource("3_8v37k")]
 position = Vector2(400, 1275)
@@ -237,7 +230,7 @@ position = Vector2(1000, 400)
 position = Vector2(1300, 1025)
 
 [node name="Box" parent="." instance=ExtResource("5_vaoyo")]
-position = Vector2(550, 1300)
+position = Vector2(600, 1350)
 
 [node name="Box3" parent="." instance=ExtResource("5_vaoyo")]
 position = Vector2(1600, 750)
