@@ -38,14 +38,17 @@ position = Vector2(150, 850)
 [node name="1x10" parent="." instance=ExtResource("2_x4wd4")]
 position = Vector2(250, 851)
 
+[node name="1x11" parent="." instance=ExtResource("2_x4wd4")]
+position = Vector2(950, 950)
+
 [node name="Big Block5" parent="." instance=ExtResource("3_k0npt")]
-position = Vector2(2850, 1850)
+position = Vector2(2950, 1850)
 
 [node name="Big Block6" parent="." instance=ExtResource("3_k0npt")]
-position = Vector2(2850, -950)
+position = Vector2(2950, -950)
 
 [node name="End Door" parent="." instance=ExtResource("4_pmcrs")]
-position = Vector2(1750, 600)
+position = Vector2(1800, 600)
 scale = Vector2(2, 2)
 
 [node name="Box2" parent="." instance=ExtResource("5_21yv5")]

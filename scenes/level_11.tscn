@@ -183,7 +183,7 @@ position = Vector2(1100, 1250)
 position = Vector2(1400, 550)
 
 [node name="1x54" parent="." instance=ExtResource("6_euubv")]
-position = Vector2(1600, 550)
+position = Vector2(1500, 550)
 
 [node name="1x52" parent="." instance=ExtResource("6_euubv")]
 position = Vector2(1750, 950)

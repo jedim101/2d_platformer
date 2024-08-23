@@ -41,6 +41,12 @@ position = Vector2(550, 850)
 [node name="1x79" parent="." instance=ExtResource("2_ehhax")]
 position = Vector2(750, 1050)
 
+[node name="1x81" parent="." instance=ExtResource("2_ehhax")]
+position = Vector2(950, 1250)
+
+[node name="1x82" parent="." instance=ExtResource("2_ehhax")]
+position = Vector2(850, 1350)
+
 [node name="1x78" parent="." instance=ExtResource("2_ehhax")]
 position = Vector2(400, 1200)
 
@@ -68,6 +74,19 @@ position = Vector2(800, 500)
 [node name="1x31" parent="." instance=ExtResource("3_5eru5")]
 position = Vector2(805, 300)
 scale = Vector2(1.1, 1)
+
+[node name="1x36" parent="." instance=ExtResource("3_5eru5")]
+position = Vector2(860, 825)
+scale = Vector2(0.8, 1)
+
+[node name="1x33" parent="." instance=ExtResource("3_5eru5")]
+position = Vector2(1100, 900)
+
+[node name="1x34" parent="." instance=ExtResource("3_5eru5")]
+position = Vector2(1100, 1000)
+
+[node name="1x35" parent="." instance=ExtResource("3_5eru5")]
+position = Vector2(1050, 1350)
 
 [node name="1x30" parent="." instance=ExtResource("3_5eru5")]
 position = Vector2(400, 400)
@@ -99,36 +118,35 @@ position = Vector2(650, 625)
 [node name="_5x65" parent="." instance=ExtResource("4_xkkuo")]
 position = Vector2(950, 825)
 
-[node name="_5x66" parent="." instance=ExtResource("4_xkkuo")]
-position = Vector2(1050, 825)
-
 [node name="_5x67" parent="." instance=ExtResource("4_xkkuo")]
-position = Vector2(1100, 875)
+position = Vector2(1050, 825)
 
 [node name="_5x55" parent="." instance=ExtResource("4_xkkuo")]
 position = Vector2(600, 1075)
 
-[node name="_5x56" parent="." instance=ExtResource("4_xkkuo")]
-position = Vector2(650, 1125)
-
-[node name="_5x60" parent="." instance=ExtResource("4_xkkuo")]
-position = Vector2(550, 1125)
-
-[node name="_5x59" parent="." instance=ExtResource("4_xkkuo")]
-position = Vector2(600, 1175)
-
 [node name="_5x62" parent="." instance=ExtResource("4_xkkuo")]
 position = Vector2(550, 1225)
+
+[node name="_5x68" parent="." instance=ExtResource("4_xkkuo")]
+position = Vector2(600, 1175)
+
+[node name="_5x69" parent="." instance=ExtResource("4_xkkuo")]
+position = Vector2(650, 1125)
+
+[node name="_5x70" parent="." instance=ExtResource("4_xkkuo")]
+position = Vector2(700, 1375)
+
+[node name="_5x71" parent="." instance=ExtResource("4_xkkuo")]
+position = Vector2(800, 1275)
+
+[node name="_5x66" parent="." instance=ExtResource("4_xkkuo")]
+position = Vector2(550, 1125)
 
 [node name="_5x63" parent="." instance=ExtResource("4_xkkuo")]
 position = Vector2(200, 1175)
 
 [node name="_5x64" parent="." instance=ExtResource("4_xkkuo")]
 position = Vector2(250, 1225)
-
-[node name="_5x54" parent="." instance=ExtResource("4_xkkuo")]
-position = Vector2(860, 850)
-scale = Vector2(0.8, 1)
 
 [node name="_5x52" parent="." instance=ExtResource("4_xkkuo")]
 position = Vector2(700, 575)

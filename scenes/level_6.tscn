@@ -30,7 +30,7 @@ position = Vector2(1700, 650)
 position = Vector2(800, 400)
 
 [node name="1x3" parent="." instance=ExtResource("7_vqdbk")]
-position = Vector2(250, 649)
+position = Vector2(250, 650)
 
 [node name="1x5" parent="." instance=ExtResource("7_vqdbk")]
 position = Vector2(350, 650)
