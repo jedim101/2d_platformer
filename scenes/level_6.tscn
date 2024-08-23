@@ -59,11 +59,20 @@ position = Vector2(250, 1150)
 [node name="1x9" parent="." instance=ExtResource("7_vqdbk")]
 position = Vector2(1750, 750)
 
+[node name="1x13" parent="." instance=ExtResource("7_vqdbk")]
+position = Vector2(1750, 850)
+
 [node name="_5x1" parent="." instance=ExtResource("8_do621")]
 position = Vector2(1900, 1375)
 
 [node name="_5x2" parent="." instance=ExtResource("8_do621")]
 position = Vector2(100, 575)
+
+[node name="_5x3" parent="." instance=ExtResource("8_do621")]
+position = Vector2(1600, 875)
+
+[node name="_5x4" parent="." instance=ExtResource("8_do621")]
+position = Vector2(1900, 675)
 
 [node name="Player" parent="." instance=ExtResource("6_hoi5i")]
 position = Vector2(674, 1399)
