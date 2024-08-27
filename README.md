@@ -6,4 +6,5 @@ It can be played at [https://jedim101.itch.io/portal-game](https://jedim101.itch
 
 Use `A` & `D` or the left & right arrow keys to move and `space` to jump.
 
-Video walkthroughs & tutorials coming soon!
+Tutorials can be found in the `tutorials` folder. They will be posted to youtube soon!
+If you have any questions or need help, contact @matthewglasser on Slack!
