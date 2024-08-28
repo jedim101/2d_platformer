@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://di88ufajyf6hb"]
 
-[ext_resource type="Texture2D" uid="uid://c5ij1xjyhacy" path="res://assets/crate.png" id="1_4sfnm"]
+[ext_resource type="Texture2D" uid="uid://b52atlp8w0uj2" path="res://assets/crate.png" id="1_u0s7v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4e223"]
 size = Vector2(100, 100)
@@ -14,4 +14,4 @@ shape = SubResource("RectangleShape2D_4e223")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(0.779291, 0.779291, 0.779291, 1)
 scale = Vector2(5, 5)
-texture = ExtResource("1_4sfnm")
+texture = ExtResource("1_u0s7v")
