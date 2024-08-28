@@ -1,0 +1,68 @@
+[gd_scene load_steps=7 format=3 uid="uid://dacv4un1yb1a3"]
+
+[ext_resource type="Script" path="res://scripts/portal.gd" id="1_bqswq"]
+[ext_resource type="Texture2D" uid="uid://br2ox652523ib" path="res://assets/purple_portal.png" id="2_ssb2j"]
+
+[sub_resource type="Animation" id="Animation_u52fo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_homkc"]
+resource_name = "portal"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rv0da"]
+_data = {
+"RESET": SubResource("Animation_u52fo"),
+"portal": SubResource("Animation_homkc")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4hl82"]
+radius = 27.0
+height = 100.0
+
+[node name="PurplePortal" type="Area2D" groups=["portal"]]
+script = ExtResource("1_bqswq")
+metadata/value = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.08165e-12, -54.5)
+scale = Vector2(0.363, 0.363)
+texture = ExtResource("2_ssb2j")
+hframes = 3
+
+[node name="PortalAnimator" type="AnimationPlayer" parent="Sprite2D"]
+libraries = {
+"": SubResource("AnimationLibrary_rv0da")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(2.08165e-12, -50)
+shape = SubResource("CapsuleShape2D_4hl82")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
