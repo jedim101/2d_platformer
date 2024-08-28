@@ -145,3 +145,7 @@ text = "28"
 [node name="LevelSelector29" parent="GridContainer" instance=ExtResource("2_0vqj6")]
 layout_mode = 2
 text = "29"
+
+[node name="LevelSelector30" parent="GridContainer" instance=ExtResource("2_0vqj6")]
+layout_mode = 2
+text = "30"
