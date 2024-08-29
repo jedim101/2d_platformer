@@ -17,12 +17,14 @@ func _on_body_entered(body):
 
 			if portal.disabled or global_scale.y < body_scale.y or global_scale.x < body_scale.x:
 				break
-			
-			$AudioStreamPlayer.play()
 
 			disabled = true
 
 			var scale_factor = portal.global_scale / global_scale
+
+
+			$PortalSound.stream = preload("res://assets/portal_normal.wav") if scale_factor.y == 1 else preload("res://assets/portal_up.wav") if scale_factor.y > 1 else preload("res://assets/portal_down.wav")
+			$PortalSound.play()
 
 			body.global_position = portal.global_position - (global_position - body.global_position) * scale_factor
 

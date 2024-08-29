@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://dwn64unibblgj" path="res://scenes/pause_menu.tscn" id="11_we7uf"]
 
 [node name="Level 32" type="Node2D"]
+position = Vector2(-1, 0)
 
 [node name="Big Block" parent="." instance=ExtResource("1_fn5gs")]
 position = Vector2(950, 2650)

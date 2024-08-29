@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://b60edsgtceue1"]
+[gd_scene load_steps=8 format=3 uid="uid://b60edsgtceue1"]
 
 [ext_resource type="Script" path="res://scripts/portal.gd" id="1_kvjqa"]
 [ext_resource type="Texture2D" uid="uid://bpaw45odb8k8" path="res://assets/green_portal.png" id="2_l50jr"]
+[ext_resource type="PackedScene" uid="uid://cuquh8oledepb" path="res://scenes/portal_sound.tscn" id="3_2m8ip"]
 
 [sub_resource type="Animation" id="Animation_u52fo"]
 length = 0.001
@@ -64,5 +65,7 @@ libraries = {
 visible = false
 position = Vector2(2.08165e-12, -50)
 shape = SubResource("CapsuleShape2D_4hl82")
+
+[node name="PortalSound" parent="." instance=ExtResource("3_2m8ip")]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
