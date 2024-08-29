@@ -7,7 +7,6 @@ func _ready():
 		hide()
 
 func control_menu():
-	print(get_tree().paused)
 	get_tree().paused = !get_tree().paused
 
 	if get_tree().paused:
