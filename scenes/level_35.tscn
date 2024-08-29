@@ -40,9 +40,6 @@ position = Vector2(1400, 700)
 [node name="1x64" parent="." instance=ExtResource("2_cj3ts")]
 position = Vector2(1350, 750)
 
-[node name="1x65" parent="." instance=ExtResource("2_cj3ts")]
-position = Vector2(1350, 750)
-
 [node name="1x66" parent="." instance=ExtResource("2_cj3ts")]
 position = Vector2(1250, 750)
 
