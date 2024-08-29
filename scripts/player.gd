@@ -35,10 +35,10 @@ func _physics_process(delta):
 	else:
 		$Sprite2D.flip_h = false
 
-	if velocity.x != 0 and not $Sprite2D/FrameAnimator.is_playing():
+	if velocity.x != 0 and not $Sprite2D/FrameAnimator.is_playing() and is_on_floor():
 		$Sprite2D/FrameAnimator.play("walking")
 		$AudioStreamPlayer.play()
-	elif velocity.x == 0: 
+	elif velocity.x == 0 or not is_on_floor(): 
 		$Sprite2D/FrameAnimator.stop()
 		$AudioStreamPlayer.stop()
 
