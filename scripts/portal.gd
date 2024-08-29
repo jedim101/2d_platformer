@@ -11,11 +11,11 @@ func _on_body_entered(body):
 
 	for portal in get_tree().get_nodes_in_group("portal"):
 		if self != portal && self.get_meta("value") == portal.get_meta("value"):
-			var height: int = body.global_scale.y
+			var body_scale = body.global_scale
 			if body is RigidBody2D:
-				height = body.get_child(0).global_scale.y
+				body_scale = body.get_child(0).global_scale
 
-			if portal.disabled or global_scale.y < height:
+			if portal.disabled or global_scale.y < body_scale.y or global_scale.x < body_scale.x:
 				break
 
 			disabled = true
