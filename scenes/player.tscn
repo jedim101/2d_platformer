@@ -66,4 +66,4 @@ libraries = {
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_hsrv2")
-volume_db = -30.0
+volume_db = -40.0
