@@ -17,6 +17,8 @@ func _on_body_entered(body):
 
 			if portal.disabled or global_scale.y < body_scale.y or global_scale.x < body_scale.x:
 				break
+			
+			$AudioStreamPlayer.play()
 
 			disabled = true
 

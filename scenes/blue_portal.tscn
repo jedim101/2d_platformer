@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://dg6kl5bnwvmoo"]
+[gd_scene load_steps=8 format=3 uid="uid://dg6kl5bnwvmoo"]
 
 [ext_resource type="Script" path="res://scripts/portal.gd" id="1_plivh"]
 [ext_resource type="Texture2D" uid="uid://c5ibl5th7r8hv" path="res://assets/blue_portal.png" id="2_qru2i"]
+[ext_resource type="AudioStream" uid="uid://bbk4i8pg2ij1j" path="res://assets/portal.wav" id="3_vdgi2"]
 
 [sub_resource type="Animation" id="Animation_u52fo"]
 length = 0.001
@@ -64,5 +65,8 @@ libraries = {
 visible = false
 position = Vector2(0, -50)
 shape = SubResource("CapsuleShape2D_4hl82")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_vdgi2")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
