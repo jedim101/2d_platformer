@@ -40,6 +40,7 @@ position = Vector2(3150, 750)
 position = Vector2(950, -1150)
 
 [node name="PauseMenu" parent="." instance=ExtResource("4_6e5ih")]
+visible = false
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
