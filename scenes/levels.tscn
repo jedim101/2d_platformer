@@ -29,7 +29,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/h_separation = 50
 theme_override_constants/v_separation = 50
-columns = 6
+columns = 7
 
 [node name="LevelSelector" parent="GridContainer" instance=ExtResource("2_0vqj6")]
 layout_mode = 2
@@ -149,3 +149,19 @@ text = "29"
 [node name="LevelSelector30" parent="GridContainer" instance=ExtResource("2_0vqj6")]
 layout_mode = 2
 text = "30"
+
+[node name="LevelSelector31" parent="GridContainer" instance=ExtResource("2_0vqj6")]
+layout_mode = 2
+text = "31"
+
+[node name="LevelSelector32" parent="GridContainer" instance=ExtResource("2_0vqj6")]
+layout_mode = 2
+text = "32"
+
+[node name="LevelSelector33" parent="GridContainer" instance=ExtResource("2_0vqj6")]
+layout_mode = 2
+text = "33"
+
+[node name="LevelSelector34" parent="GridContainer" instance=ExtResource("2_0vqj6")]
+layout_mode = 2
+text = "34"
