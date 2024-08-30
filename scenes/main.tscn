@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://xi2r5qurslhq"]
+[gd_scene load_steps=15 format=3 uid="uid://xi2r5qurslhq"]
 
 [ext_resource type="PackedScene" uid="uid://6k3lpo2we22s" path="res://scenes/1x_3.tscn" id="1_cra1h"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_geyk6"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://c0caskoxvfetl" path="res://scenes/green_floating_portal.tscn" id="6_pbm43"]
 [ext_resource type="PackedScene" uid="uid://ds4shqthemipk" path="res://scenes/orange_floating_portal.tscn" id="7_4vp6s"]
 [ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="7_gs76k"]
+[ext_resource type="PackedScene" uid="uid://b6tg55crj1xgy" path="res://scenes/options.tscn" id="14_tfgm3"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -107,8 +108,22 @@ theme_override_styles/hover = ExtResource("3_nwslq")
 theme_override_styles/pressed = ExtResource("3_nwslq")
 text = "Play"
 
+[node name="OptionsBtn" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = ExtResource("2_wlbta")
+theme_override_styles/hover = ExtResource("3_nwslq")
+theme_override_styles/pressed = ExtResource("3_nwslq")
+text = "Options"
+
 [node name="OrangeFloatingPortal" parent="." instance=ExtResource("7_4vp6s")]
-position = Vector2(661, 701)
+position = Vector2(661, 645)
 scale = Vector2(1.5, 1.15)
 
 [node name="Big Block" parent="." instance=ExtResource("1_lljn7")]
@@ -126,4 +141,11 @@ position = Vector2(950, -1150)
 [node name="Box" parent="." instance=ExtResource("7_gs76k")]
 position = Vector2(1000, 1150)
 
+[node name="Options" parent="." instance=ExtResource("14_tfgm3")]
+visible = false
+layout_mode = 1
+offset_right = -155.0
+offset_bottom = -2.0
+
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionsBtn" to="." method="_on_options_pressed"]

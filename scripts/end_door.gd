@@ -8,6 +8,10 @@ func _on_body_entered(body):
 
 		var next_level_file = "res://scenes/level_" + str(next_level) + ".tscn"
 		
-		$AudioStreamPlayer.play()
+		$AudioStreamPlayer.volume_db = 60 * Global.sounds_volume -60
+
+		if Global.sounds_volume > 0:
+			$AudioStreamPlayer.play()
+
 		await get_tree().create_timer(0.6).timeout
 		get_tree().change_scene_to_file(next_level_file if ResourceLoader.exists(next_level_file) else "res://scenes/you_win.tscn")

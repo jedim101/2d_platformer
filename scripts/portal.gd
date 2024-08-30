@@ -24,7 +24,10 @@ func _on_body_entered(body):
 
 
 			$PortalSound.stream = preload("res://assets/portal_normal.wav") if scale_factor.y == 1 else preload("res://assets/portal_up.wav") if scale_factor.y > 1 else preload("res://assets/portal_down.wav")
-			$PortalSound.play()
+			$PortalSound.volume_db = 60 * Global.sounds_volume -60
+
+			if Global.sounds_volume > 0:
+				$PortalSound.play()
 
 			body.global_position = portal.global_position - (global_position - body.global_position) * scale_factor
 
