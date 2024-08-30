@@ -7,7 +7,7 @@ var sounds_volume = 0.5
 
 func _adjust_music_volume(new_volume: float):
   music_volume = new_volume
-  BackgroundMusic.volume_db = 70 * new_volume -70
+  BackgroundMusic.volume_db = 60 * new_volume -60
 
   if new_volume == 0:
     BackgroundMusic.stop()
