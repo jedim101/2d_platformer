@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dwn64unibblgj"]
+[gd_scene load_steps=5 format=3 uid="uid://dwn64unibblgj"]
 
 [ext_resource type="Script" path="res://scripts/pause_menu.gd" id="1_ghv4v"]
 [ext_resource type="StyleBox" uid="uid://dcpxyoobiwn16" path="res://assets/button.tres" id="2_1b6xd"]
 [ext_resource type="StyleBox" uid="uid://bd1085xek35ky" path="res://assets/button_hover.tres" id="3_80d7g"]
+[ext_resource type="PackedScene" uid="uid://b6tg55crj1xgy" path="res://scenes/options.tscn" id="4_rvq7w"]
 
 [node name="PauseMenu" type="Control"]
 process_mode = 3
@@ -34,6 +35,21 @@ offset_bottom = 267.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 50
+
+[node name="Options" type="Button" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = ExtResource("2_1b6xd")
+theme_override_styles/hover = ExtResource("3_80d7g")
+theme_override_styles/pressed = ExtResource("3_80d7g")
+text = "Options
+"
 
 [node name="Resume" type="Button" parent="ColorRect/VBoxContainer"]
 layout_mode = 2
@@ -78,6 +94,16 @@ theme_override_styles/pressed = ExtResource("3_80d7g")
 text = "Quit
 "
 
+[node name="Options" parent="." instance=ExtResource("4_rvq7w")]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 2000.0
+offset_bottom = 1500.0
+
+[connection signal="pressed" from="ColorRect/VBoxContainer/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="ColorRect/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="ColorRect/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="ColorRect/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
