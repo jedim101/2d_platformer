@@ -6,3 +6,7 @@ func _on_play_pressed():
 
 func _on_options_pressed():
 	$Options.show()
+
+
+func _on_help_btn_pressed():
+	$Help.show()
