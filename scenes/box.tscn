@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4e223"]
 size = Vector2(100, 100)
 
-[node name="Box" type="RigidBody2D"]
+[node name="Box" type="RigidBody2D" groups=["boxes"]]
 angular_damp = 100.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
