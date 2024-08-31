@@ -266,5 +266,5 @@ theme_override_font_sizes/font_size = 50
 text = "Created by Matthew Glasser"
 horizontal_alignment = 1
 
-[connection signal="pressed" from="Done" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="Done" to="." method="_on_done_pressed"]
+[connection signal="pressed" from="Done" to="." method="_on_quit_pressed"]

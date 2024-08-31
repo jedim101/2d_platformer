@@ -136,5 +136,5 @@ text = "Done
 
 [connection signal="value_changed" from="VBoxContainer/Sliders/Music/MusicSlider" to="." method="_on_music_slider_value_changed"]
 [connection signal="value_changed" from="VBoxContainer/Sliders/Sounds/SoundsSlider" to="." method="_on_sounds_slider_value_changed"]
-[connection signal="pressed" from="VBoxContainer/Done" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="VBoxContainer/Done" to="." method="_on_done_pressed"]
+[connection signal="pressed" from="VBoxContainer/Done" to="." method="_on_quit_pressed"]
