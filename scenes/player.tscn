@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://bl2qxycacwbyd"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_slsfw"]
-[ext_resource type="Texture2D" uid="uid://81n4bbch64xv" path="res://assets/player.png" id="2_1fw0g"]
+[ext_resource type="Texture2D" uid="uid://cb6hsyy3rcjis" path="res://assets/player.png" id="2_1fw0g"]
 [ext_resource type="AudioStream" uid="uid://cyjphvtxs7d22" path="res://assets/walking.wav" id="3_hsrv2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o3wc6"]
@@ -78,7 +78,7 @@ position = Vector2(-5.96046e-08, -49)
 scale = Vector2(0.98, 0.98)
 texture = ExtResource("2_1fw0g")
 hframes = 6
-vframes = 2
+vframes = 3
 frame = 2
 
 [node name="FrameAnimator" type="AnimationPlayer" parent="Sprite2D"]
