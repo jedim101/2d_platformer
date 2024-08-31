@@ -9,6 +9,8 @@ var pushing = false
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
+func _ready():
+	$Sprite2D.frame = 0
 
 func _physics_process(delta):
 	var speed = SPEED * scale.x
@@ -57,8 +59,6 @@ func _on_area_2d_body_entered(body:Node2D):
 		pushing = true
 		$Sprite2D/FrameAnimator.stop()
 
-	# pass
-
 
 func _on_area_2d_body_exited(body:Node2D):
 	if body in get_tree().get_nodes_in_group("boxes"):
@@ -66,4 +66,3 @@ func _on_area_2d_body_exited(body:Node2D):
 		$Sprite2D/FrameAnimator.stop()
 		$Sprite2D/FrameAnimator.play("walking")
 		$Sprite2D/FrameAnimator.stop()
-	# pass

@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://bl2qxycacwbyd"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_slsfw"]
-[ext_resource type="Texture2D" uid="uid://ciu2u84r8xk7k" path="res://assets/player.png" id="2_1fw0g"]
+[ext_resource type="Texture2D" uid="uid://81n4bbch64xv" path="res://assets/player.png" id="2_1fw0g"]
 [ext_resource type="AudioStream" uid="uid://cyjphvtxs7d22" path="res://assets/walking.wav" id="3_hsrv2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o3wc6"]
@@ -69,6 +69,7 @@ size = Vector2(5, 98)
 script = ExtResource("1_slsfw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(2.08165e-12, -49)
 shape = SubResource("RectangleShape2D_o3wc6")
 
@@ -94,6 +95,7 @@ volume_db = -40.0
 position = Vector2(-3.55271e-15, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
 position = Vector2(27, -49)
 shape = SubResource("RectangleShape2D_821q2")
 
