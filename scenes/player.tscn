@@ -1,7 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://bl2qxycacwbyd"]
+[gd_scene load_steps=11 format=3 uid="uid://bl2qxycacwbyd"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_slsfw"]
-[ext_resource type="Texture2D" uid="uid://b2o8n3k0mi8ju" path="res://assets/player.png" id="2_1fw0g"]
+[ext_resource type="Texture2D" uid="uid://bhh2l1bow1dnu" path="res://assets/player.PNG" id="2_2edi3"]
 [ext_resource type="AudioStream" uid="uid://cyjphvtxs7d22" path="res://assets/walking.wav" id="3_hsrv2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o3wc6"]
@@ -19,7 +19,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [2]
+"values": [17]
 }
 
 [sub_resource type="Animation" id="Animation_vkhk4"]
@@ -55,9 +55,26 @@ tracks/0/keys = {
 "values": [0, 1, 2, 3, 4, 5]
 }
 
+[sub_resource type="Animation" id="Animation_hrbc3"]
+resource_name = "jumping"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [12, 13]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_oktos"]
 _data = {
 "RESET": SubResource("Animation_wecpi"),
+"jumping": SubResource("Animation_hrbc3"),
 "pushing": SubResource("Animation_vkhk4"),
 "walking": SubResource("Animation_m62rr")
 }
@@ -76,10 +93,10 @@ shape = SubResource("RectangleShape2D_o3wc6")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-5.96046e-08, -49)
 scale = Vector2(0.98, 0.98)
-texture = ExtResource("2_1fw0g")
+texture = ExtResource("2_2edi3")
 hframes = 6
 vframes = 3
-frame = 2
+frame = 17
 
 [node name="FrameAnimator" type="AnimationPlayer" parent="Sprite2D"]
 root_node = NodePath("../..")
@@ -91,13 +108,13 @@ libraries = {
 stream = ExtResource("3_hsrv2")
 volume_db = -40.0
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="FrontArea" type="Area2D" parent="."]
 position = Vector2(-3.55271e-15, 0)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FrontArea"]
 visible = false
 position = Vector2(27, -49)
 shape = SubResource("RectangleShape2D_821q2")
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="FrontArea" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="FrontArea" to="." method="_on_area_2d_body_exited"]

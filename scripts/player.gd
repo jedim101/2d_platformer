@@ -10,7 +10,7 @@ var pushing = false
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready():
-	$Sprite2D.frame = 0
+	$Sprite2D/FrameAnimator.play("RESET")
 
 func _physics_process(delta):
 	var speed = SPEED * scale.x
@@ -20,6 +20,7 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 
 	if Input.is_action_just_pressed("jump") and is_on_floor():
+		$Sprite2D/FrameAnimator.play("jumping")
 		velocity.y = jump_velocity
 
 	var direction = Input.get_axis("move_left", "move_right")
@@ -30,10 +31,10 @@ func _physics_process(delta):
 
 	if velocity.x < 0:
 		$Sprite2D.flip_h = true
-		$Area2D.position.x = -49 - $Area2D/CollisionShape2D.shape.size.x
+		$FrontArea.position.x = -49 - $FrontArea/CollisionShape2D.shape.size.x
 	elif velocity.x > 0:
 		$Sprite2D.flip_h = false
-		$Area2D.position.x = 0
+		$FrontArea.position.x = 0
 
 	if velocity.x != 0 and not $Sprite2D/FrameAnimator.is_playing() and is_on_floor():
 		$Sprite2D/FrameAnimator.play("pushing" if pushing else "walking")
@@ -43,7 +44,7 @@ func _physics_process(delta):
 		if Global.sounds_volume > 0:
 			$AudioStreamPlayer.play()
 
-	elif velocity.x == 0 or not is_on_floor(): 
+	elif velocity.x == 0: 
 		$Sprite2D/FrameAnimator.stop()
 		$AudioStreamPlayer.stop()
 
