@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://bl2qxycacwbyd"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_slsfw"]
-[ext_resource type="Texture2D" uid="uid://bhh2l1bow1dnu" path="res://assets/player.PNG" id="2_2edi3"]
+[ext_resource type="Texture2D" uid="uid://bp72nmcbmceca" path="res://assets/player.PNG" id="2_2edi3"]
 [ext_resource type="AudioStream" uid="uid://cyjphvtxs7d22" path="res://assets/walking.wav" id="3_hsrv2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o3wc6"]
@@ -65,10 +65,10 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = false
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [12, 13]
+"values": [12]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_oktos"]
