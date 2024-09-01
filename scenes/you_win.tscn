@@ -1,10 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://b4v13dh7un233"]
+[gd_scene load_steps=14 format=3 uid="uid://b4v13dh7un233"]
 
 [ext_resource type="Script" path="res://scripts/you_win.gd" id="1_0oxpu"]
 [ext_resource type="PackedScene" uid="uid://dr6nd8xb1or88" path="res://scenes/big_block.tscn" id="1_sir5n"]
 [ext_resource type="StyleBox" uid="uid://dcpxyoobiwn16" path="res://assets/button.tres" id="2_uv13u"]
 [ext_resource type="StyleBox" uid="uid://bd1085xek35ky" path="res://assets/button_hover.tres" id="3_ti14f"]
 [ext_resource type="PackedScene" uid="uid://ds4shqthemipk" path="res://scenes/orange_floating_portal.tscn" id="4_l4pjm"]
+[ext_resource type="PackedScene" uid="uid://6k3lpo2we22s" path="res://scenes/1x_3.tscn" id="6_ukbgm"]
+[ext_resource type="PackedScene" uid="uid://dsqqg6v1wdwtq" path="res://scenes/orange_portal.tscn" id="7_dx10j"]
+[ext_resource type="PackedScene" uid="uid://pkckaxf2ik3h" path="res://scenes/blue_floating_portal.tscn" id="8_clknh"]
+[ext_resource type="PackedScene" uid="uid://bxiv4s4kfo3xu" path="res://scenes/end_door.tscn" id="9_voyd7"]
+[ext_resource type="PackedScene" uid="uid://dg6kl5bnwvmoo" path="res://scenes/blue_portal.tscn" id="10_220e8"]
+[ext_resource type="PackedScene" uid="uid://b60edsgtceue1" path="res://scenes/green_portal.tscn" id="11_7asqw"]
+[ext_resource type="PackedScene" uid="uid://c0caskoxvfetl" path="res://scenes/green_floating_portal.tscn" id="12_g4028"]
+[ext_resource type="PackedScene" uid="uid://di88ufajyf6hb" path="res://scenes/box.tscn" id="13_xvi8n"]
 
 [node name="You Win" type="Control"]
 layout_mode = 3
@@ -67,5 +75,53 @@ position = Vector2(950, -1150)
 [node name="OrangeFloatingPortal" parent="." instance=ExtResource("4_l4pjm")]
 position = Vector2(784, 701)
 scale = Vector2(1.5, 1.15)
+
+[node name="1x3" parent="." instance=ExtResource("6_ukbgm")]
+position = Vector2(1000, 1250)
+
+[node name="1x9" parent="." instance=ExtResource("6_ukbgm")]
+position = Vector2(250, 850)
+
+[node name="1x4" parent="." instance=ExtResource("6_ukbgm")]
+position = Vector2(250, 1250)
+
+[node name="1x5" parent="." instance=ExtResource("6_ukbgm")]
+position = Vector2(250, 1350)
+
+[node name="1x6" parent="." instance=ExtResource("6_ukbgm")]
+position = Vector2(450, 1250)
+
+[node name="1x8" parent="." instance=ExtResource("6_ukbgm")]
+position = Vector2(1750, 450)
+
+[node name="1x7" parent="." instance=ExtResource("6_ukbgm")]
+position = Vector2(450, 1350)
+
+[node name="OrangePortal" parent="." instance=ExtResource("7_dx10j")]
+position = Vector2(1700, 1400)
+scale = Vector2(1.5, 1.5)
+
+[node name="BlueFloatingPortal" parent="." instance=ExtResource("8_clknh")]
+position = Vector2(900, 350)
+scale = Vector2(1.5, 1.5)
+
+[node name="End Door" parent="." instance=ExtResource("9_voyd7")]
+position = Vector2(1750, 400)
+scale = Vector2(1.5, 1.5)
+
+[node name="BluePortal" parent="." instance=ExtResource("10_220e8")]
+position = Vector2(250, 801)
+scale = Vector2(1.5, 1.5)
+
+[node name="GreenPortal" parent="." instance=ExtResource("11_7asqw")]
+position = Vector2(350, 1201)
+scale = Vector2(1.5, 1.5)
+
+[node name="GreenFloatingPortal" parent="." instance=ExtResource("12_g4028")]
+position = Vector2(1782, 900)
+scale = Vector2(1.5, 1.5)
+
+[node name="Box" parent="." instance=ExtResource("13_xvi8n")]
+position = Vector2(1000, 1150)
 
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
